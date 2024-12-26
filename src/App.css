@@ -3,6 +3,10 @@ body{
   background-color: #edefed;
 
 }
+:root{
+  --main:rgb(46, 221, 87);
+  font-family:Oswald ;
+}
 
 @font-face {
   font-family:Oswald ;

@@ -285,6 +285,8 @@ height: 800px;
     font-size: 20px;
     flex: 1;
     border: 5px solid rgb(46, 221, 87);
+    /* background-color:  #edefed48; */
+
     display: flex;
     justify-content: center;
     flex-direction: column;

@@ -4,6 +4,7 @@ import tacos from '../assets/tacos.jpg'
 import welcome from '../assets/welcome.jpg'
 import mapSC from '../assets/mapSC.png'
 import '../styles/Home.css'
+import Carousel from './Carousel'
 function Home() {
   return (
 
@@ -54,7 +55,7 @@ function Home() {
 
 
 
-
+          <Carousel/>
 
 
 
