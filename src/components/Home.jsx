@@ -56,6 +56,9 @@ function Home() {
           </div>
           <div className='welcome-text'>
             <h1 className='welcome-text-title'>WELCOME TO STREET TACOS Y MAS!</h1>
+            <div className='welcome-img-alt-container'>
+              <img className='welcome-img-alt' src={welcome}/>
+            </div>
             <p>
             A Family-owned food truck right here in Venus, TX! We’re passionate about bringing you the authentic flavors of Mexico, crafted with love and tradition, and served straight to your neighborhood.
 
