@@ -22,10 +22,10 @@ function Carousel() {
             spaceBetween: 15
           }
         }}
-
         freeMode={true}
         pagination={{ clickable: true }}
         navigation={true}
+        loop={true}
         autoplay={{
           delay: 5000, // Delay in milliseconds (3 seconds)
           disableOnInteraction: true, // Continue autoplay after user interactions

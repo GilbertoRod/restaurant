@@ -1,10 +1,15 @@
 import React from 'react'
-import hero from '../assets/foodhero2.jpg'
+
 import tacos from '../assets/tacos.jpg'
 import welcome from '../assets/welcome.jpg'
-import mapSC from '../assets/mapSC.png'
+
 import '../styles/Home.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Carousel from './Carousel'
+import { faLocationDot} from '@fortawesome/free-solid-svg-icons'
+import ImageSlides from './ImageSlides'
+
+
 function Home() {
   return (
 
@@ -21,7 +26,7 @@ function Home() {
 
 
 
-
+        <div className='home-page-supercontainer'>
         <div className='home-menu-container'>
           <div className='transition-black-div'/>
 
@@ -29,7 +34,7 @@ function Home() {
           <div className='home-menu-text-container'>
             <div className='home-menu-text'>
               <div className='home-menu-text-content'>
-                <h1>DELICIOUS VARIETY YOU CAN'T REFUSE!</h1>
+                <h1 style={{color:"white"}}>DELICIOUS VARIETY YOU CAN'T REFUSE!</h1>
                 <button>VIEW MENU</button>
               </div>
             </div>
@@ -37,6 +42,10 @@ function Home() {
 
         </div>
 
+
+
+
+        <div className='home-content-supercontainer'>
 
 
 
@@ -48,10 +57,39 @@ function Home() {
           <div className='welcome-text'>
             <h1 className='welcome-text-title'>WELCOME TO STREET TACOS Y MAS!</h1>
             <p>
-              We are a family-owned food truck located in Venus, TX bringing you the authentic flavors of Mexico, right to your neighborhood. We’re proud to serve fresh, delicious meals made with love and tradition. From tacos and tortas to burritos and quesadillas, we’ve got something for everyone!
+            A Family-owned food truck right here in Venus, TX! We’re passionate about bringing you the authentic flavors of Mexico, crafted with love and tradition, and served straight to your neighborhood.
+
+            Our menu features all your Mexican food favorites, from tacos and tortas to burritos and quesadillas, each made with the freshest ingredients. Whether you’re in the mood for something classic or a new twist on an old favorite, we've got something to satisfy every craving.
+
+            At Street Tacos Y Mas, we believe in more than just great food – we believe in creating a community where everyone feels welcome. Every dish we serve is made with care, bringing you a taste of tradition in every bite.
+
+            So come hungry, bring your family and friends, and enjoy a meal made with the spirit of Mexican hospitality. We’re here to make your day a little brighter and your meal a lot more delicious!
             </p>
           </div>
         </div>
+
+
+
+        <div>
+          <h1 className='location-text-title'>WHAT DO WE SERVE?</h1>
+          <div className='serve-img-container'>
+
+
+
+                <ImageSlides images={['https://cdn.concreteplayground.com/content/uploads/2017/06/beerbeautifultruthoart2_klow_smallres_9.jpg','https://hips.hearstapps.com/hmg-prod/images/chicken-quesadillas-index-668eeabf1a2c7.jpg?crop=0.8885870590454631xw:1xh;center,top&resize=1200:*']}/>
+
+
+
+          </div>
+        </div>
+
+
+        
+
+
+
+
+
 
 
 
@@ -60,7 +98,7 @@ function Home() {
 
 
 
-
+        </div>
 
         
 
@@ -68,8 +106,11 @@ function Home() {
           <div className='location-container'>
             <div className='location-text-info'>
               <h1 className='location-text-title'>LOCATION &amp; BUSINESS HOURS</h1>
-              <p><a href='https://maps.app.goo.gl/rr9R4xcZq6C3WJ1W6' target='_blank'>110 FM157, Venus, TX 76084</a></p>
-              
+              <p>
+                <a href='https://maps.app.goo.gl/rr9R4xcZq6C3WJ1W6' target='_blank'>
+                <FontAwesomeIcon icon={faLocationDot} color='var(--main)'/> 110 FM157, Venus, TX 76084
+                </a>
+              </p>
               <p>
                 Our Business Hours Are:<br/>
                 <br/>
@@ -93,7 +134,7 @@ function Home() {
           referrerPolicy="no-referrer-when-downgrade"/>
           </div>
         </div>
-
+      </div>
 
 
     </>
