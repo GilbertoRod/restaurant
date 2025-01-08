@@ -4,6 +4,7 @@ body{
 
 }
 :root{
+  /* --main:rgb(46, 221, 87); */
   --main:rgb(46, 221, 87);
   font-family:Oswald ;
 }

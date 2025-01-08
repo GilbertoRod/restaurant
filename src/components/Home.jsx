@@ -74,7 +74,7 @@ function Home() {
 
 
         <div>
-          <h1 className='location-text-title'>WHAT DO WE SERVE?</h1>
+          <h1 className='location-text-title'>OUR FOOD</h1>
           <div className='serve-img-container'>
 
 
@@ -115,8 +115,7 @@ function Home() {
                 </a>
               </p>
               <p>
-                Our Business Hours Are:<br/>
-                <br/>
+
                 Monday: 10 AM - 9 PM<br/>
                 Tuesday: 10 AM - 8 PM<br/>
                 Wednesday: 10 AM - 8 PM<br/>
