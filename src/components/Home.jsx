@@ -57,14 +57,14 @@ function Home() {
           <div className='welcome-text'>
             <h1 className='welcome-text-title'>WELCOME TO STREET TACOS Y MAS!</h1>
 
-            <p>
-            A Family-owned food truck right here in Venus, TX! We’re passionate about bringing you the authentic flavors of Mexico, crafted with love and tradition, and served straight to your neighborhood.
+            <p>A family-owned food truck in Venus, TX, serving authentic Mexican flavors made with love and tradition. Our menu features tacos, tortas, burritos, and quesadillas crafted with fresh ingredients. At Street Tacos Y Mas, we’re all about great food and a welcoming community. Come enjoy a taste of Mexico with every bite!
+            {/* A Family-owned food truck right here in Venus, TX! We’re passionate about bringing you the authentic flavors of Mexico, crafted with love and tradition, and served straight to your neighborhood.
 
             Our menu features all your Mexican food favorites, from tacos and tortas to burritos and quesadillas, each made with the freshest ingredients. Whether you’re in the mood for something classic or a new twist on an old favorite, we've got something to satisfy every craving.
 
             At Street Tacos Y Mas, we believe in more than just great food – we believe in creating a community where everyone feels welcome. Every dish we serve is made with care, bringing you a taste of tradition in every bite.
 
-            So come hungry, bring your family and friends, and enjoy a meal made with the spirit of Mexican hospitality. We’re here to make your day a little brighter and your meal a lot more delicious!
+            So come hungry, bring your family and friends, and enjoy a meal made with the spirit of Mexican hospitality. We’re here to make your day a little brighter and your meal a lot more delicious! */}
             </p>
           </div>
         </div>

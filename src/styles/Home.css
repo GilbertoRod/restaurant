@@ -428,7 +428,7 @@
 
 .location-text-title{
     text-align: center;
-
+    text-shadow: 2px 2px 0px var(--main);
     font-size: 45px;
 }
 

@@ -1,6 +1,7 @@
 .reviews-title{
     font-size: 45px;
     margin: 80px 0px 20px 0px;
+    text-shadow: 2px 2px 0px var(--main);
 }
 .review-container{
     background-color: white;
