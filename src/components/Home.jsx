@@ -13,7 +13,7 @@ import ImageSlides from './ImageSlides'
 function Home() {
   return (
 
-    <>
+    <div>
         {/* <div className='hero-container'>
 
             <img src={hero} className='hero-image'/>
@@ -138,7 +138,7 @@ function Home() {
       </div>
 
 
-    </>
+    </div>
   )
 }
 

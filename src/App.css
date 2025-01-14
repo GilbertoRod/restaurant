@@ -1,7 +1,7 @@
-body{
+html,body{
   margin: 0px;
   background-color: #edefed;
-
+  height: 100%;
 }
 :root{
   /* --main:rgb(46, 221, 87); */
