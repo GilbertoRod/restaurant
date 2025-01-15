@@ -8,20 +8,7 @@ import { FreeMode, Pagination, Navigation,Autoplay } from 'swiper/modules';
 import '../styles/Swiper.css';
 import Reviews from '../assets/Reviews';
 function Carousel() {
-  const [reviews, setReviews] = useState([]);
-  useEffect(() => {
-    // Fetch the reviews data
-    fetch('/reviews.json')
-      .then((response) => response.json())
-      .then((data) => {
-        console.log("Success")
-        // Filter reviews with 5-star ratings and review text
-        const fiveStarReviewsWithText = data.filter(
-          (review) => review.review_rating === 5 && review.review_text
-        );
-        setReviews(fiveStarReviewsWithText);
-      });
-  }, []);
+  
   return (
     <div className='reviews'>
         <h1 className='reviews-title'>OUR REVIEWS</h1>
