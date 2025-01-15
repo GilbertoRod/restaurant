@@ -43,7 +43,7 @@
     height: 0.25rem;
     width: 100%;
     transition: all 0.3s;
-    border: .5px solid var(--main);
+    border: .5px solid black;
   }
   
   .menu-icon.open .bar:nth-child(1) {

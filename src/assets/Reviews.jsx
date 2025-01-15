@@ -3,11 +3,12 @@ import '../styles/Carousel.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { faUserCircle } from '@fortawesome/free-solid-svg-icons'
-function Reviews({name,review}) {
+function Reviews({name,review,image,reviewlink}) {
   return (
     <div className='review-container'>
         <div className='review-image'>
-            <FontAwesomeIcon icon={faUserCircle} size='4x'/>
+          {image?<img src={image} width="100%" alt={name}/>:<FontAwesomeIcon icon={faUserCircle} size='4x'/>}
+
         </div>
 
         <h1 className='review-name'>

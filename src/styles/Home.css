@@ -1,3 +1,10 @@
+.home{
+    background: url("");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
 
 .hero-container{
     position: relative;
@@ -101,8 +108,7 @@
 
 .home-image{
     width: 100%;
-    min-height: 550px;
-    max-height: 650px;
+    height: 100vh;
     object-fit: cover;
 }
 
@@ -113,6 +119,11 @@
     display: flex;
     min-height: 550px;
     margin: 50px 0px;
+    background: url("https://i.pinimg.com/originals/df/a1/1c/dfa11c95f318f20b0bbaaa93773d06de.png");
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
 }
 .welcome-img{
@@ -162,7 +173,11 @@
     background-color: var(--main);
 }
 .welcome-text p{
-
+color: white;
+background-color: rgba(34, 34, 34, 0.836);
+padding: 20px;
+border-radius: 5px;
+height: 100%;
 }
 .welcome-img-mobile{
     display: none;
@@ -218,6 +233,7 @@
         width: initial;
     }
     .welcome-text p{
+        padding: 20px;
 
     }
     .welcome-text{

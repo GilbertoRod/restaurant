@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -8,9 +8,74 @@ import { FreeMode, Pagination, Navigation,Autoplay } from 'swiper/modules';
 import '../styles/Swiper.css';
 import Reviews from '../assets/Reviews';
 function Carousel() {
+  const [reviews, setReviews] = useState([]);
+  useEffect(() => {
+    // Fetch the reviews data
+    fetch('/reviews.json')
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Success")
+        // Filter reviews with 5-star ratings and review text
+        const fiveStarReviewsWithText = data.filter(
+          (review) => review.review_rating === 5 && review.review_text
+        );
+        setReviews(fiveStarReviewsWithText);
+      });
+  }, []);
   return (
-    <div>
+    <div className='reviews'>
         <h1 className='reviews-title'>OUR REVIEWS</h1>
+        <Swiper
+        breakpoints={{
+          1500:{
+            slidesPerView: 3,
+            spaceBetween: 15
+          },
+          860: {
+            slidesPerView: 2,
+            spaceBetween: 15
+          }
+        }}
+        freeMode={true}
+        navigation={true}
+        loop={true}
+        autoplay={{
+          delay: 5000, // Delay in milliseconds (3 seconds)
+          disableOnInteraction: true, // Continue autoplay after user interactions
+          pauseOnMouseEnter: true, // Pause autoplay on mouse hover
+        }}
+        modules={[FreeMode, Pagination, Navigation, Autoplay]}
+      >
+
+          {reviews.map((review,index)=>(
+            <SwiperSlide key={index}>
+              <Reviews name={review.author_title} review={review.review_text} image={review.author_image} reviewlink={review.review_link}/>
+            </SwiperSlide>
+          ))}
+
+        </Swiper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+{/* 
         <Swiper
         breakpoints={{
           1500:{
@@ -48,7 +113,7 @@ function Carousel() {
             <Reviews name={"Ashley L"} review={"The food is delicious, fresh, & authentic. I love their tacos. They cook them fresh and serve them hot. The sautéed onions are so good. Add lime, cilantro & salsa and they’re perfect. I also really enjoy the elote. Great food. Take home or dine out on the little patio. The owners are always so friendly. We’ll be back again for sure."}/>
 
         </SwiperSlide>
-      </Swiper>
+      </Swiper> */}
       
     </div>
   )

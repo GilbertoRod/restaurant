@@ -13,7 +13,7 @@ import ImageSlides from './ImageSlides'
 function Home() {
   return (
 
-    <div>
+    <div className='home'>
         {/* <div className='hero-container'>
 
             <img src={hero} className='hero-image'/>
