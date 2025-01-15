@@ -7,7 +7,7 @@
     text-shadow: 2px 2px 0px var(--main);
 }
 .review-container{
-    background-color: white;
+    background-color: rgb(17, 17, 17);
     border-radius:10px ;
     height: 520px;
     display: flex;
@@ -37,6 +37,7 @@
     margin: 0;
     overflow-y: scroll;
     max-width: 400px;
+    color: white;
 
 }
 .review-text::-webkit-scrollbar{
