@@ -2,18 +2,29 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background-color: var(--main);
-    color: white;
+
+     background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     position: fixed;
-    top: 0;
-    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 25px;
+    box-shadow: 2px 0px 5px black;
+    border-radius: 10px;
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    width: initial;
     z-index: 1000;
   }
+  .navbar:hover{
+    /* background: linear-gradient(rgba(0, 0, 0, 0.825) 0%, rgba(0, 0, 0, 0) 80%); */
+
+  }
   
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+  .company-logo {
+    width: 100px;
+    transition: ease-in .15s;
+
   }
   
   .menu-icon {
@@ -27,22 +38,30 @@
   }
   
   .menu-icon .bar {
-    background: white;
+    background: rgb(27, 27, 27);
+    border-radius: 10px;
     height: 0.25rem;
     width: 100%;
     transition: all 0.3s;
+    border: .5px solid white;
   }
   
   .menu-icon.open .bar:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+    transform: rotate(45deg) translate(9px, 7px);
+    background: white;
+
   }
   
   .menu-icon.open .bar:nth-child(2) {
     opacity: 0;
+    background: white;
+
   }
   
   .menu-icon.open .bar:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
+    transform: rotate(-45deg) translate(6px, -5px);
+    background: white;
+
   }
   
   /* Navigation Links */
@@ -50,21 +69,42 @@
     list-style: none;
     display: flex;
     gap: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
   }
   
   .nav-links li a {
     text-decoration: none;
-    color: white;
-    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
     transition: color 0.3s;
   }
   
   .nav-links li a:hover {
-    color: #b6edc8;
+    color: #343434;
+    text-decoration: underline;
+    text-decoration-color: var(--main);
   }
   
   /* Responsive Styles */
   @media (max-width: 1100px) {
+    .navbar{
+        padding: 10px 25px;
+        box-shadow: 2px 0px 5px black;
+        border-radius: 10px;
+        top: 10px;
+        right: 10px;
+        left: 10px;
+        width: initial;
+
+
+    }
+    .company-logo {
+        width: 80px;
+        
+    
+      }
     .menu-icon {
       display: flex;
     }
@@ -74,19 +114,26 @@
       top: 0;
       right: 0;
       height: 100%;
-      background-color: rgb(17, 17, 17);
+      background-color: rgba(17, 17, 17, 0.98);
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin: 0;
       gap: 2rem;
       width: 100%; /* Take full width */
       transform: translateX(100%); /* Initially off-screen */
-      transition: transform 0.3s ease-in-out; /* Smooth transition */
+      transition: transform 0.3s ease-in-out;/* Smooth transition */
+
     }
   
     .nav-links.active {
       transform: translateX(0); /* Slide in */
       margin: 0;
+
+    }
+    .nav-links li a{
+        font-size: 40px;
+        color: white;
     }
   }
   

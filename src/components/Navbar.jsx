@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
+import logo from '../assets/tacoymas.png'
 
 function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +12,7 @@ function HamburgerMenu() {
 
   return (
     <nav className="navbar">
-      <div className="logo">Company Logo</div>
+      <div className="logo"><img src={logo} className='company-logo' alt='Company Logo'/></div>
       <div
         className={`menu-icon ${isOpen ? "open" : ""}`}
         onClick={toggleMenu}
@@ -23,29 +24,25 @@ function HamburgerMenu() {
       <ul className={`nav-links ${isOpen ? "active" : ""}`}>
         <li>
           <NavLink to="/" onClick={toggleMenu}>
-            Home
+            HOME
           </NavLink>
         </li>
         <li>
-          <NavLink to="/about" onClick={toggleMenu}>
-            About
+          <NavLink to="/" onClick={toggleMenu}>
+            MENU
           </NavLink>
         </li>
         <li>
-          <NavLink to="/portfolio" onClick={toggleMenu}>
-            Portfolio
+          <NavLink to="/" onClick={toggleMenu}>
+            ABOUT
           </NavLink>
         </li>
         <li>
-          <NavLink to="/blog" onClick={toggleMenu}>
-            Blog
+          <NavLink to="/" onClick={toggleMenu}>
+            FAQ
           </NavLink>
         </li>
-        <li>
-          <NavLink to="/contact" onClick={toggleMenu}>
-            Contact
-          </NavLink>
-        </li>
+
       </ul>
     </nav>
   );
