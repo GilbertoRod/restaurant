@@ -27,6 +27,7 @@
     font-size: 35px;
     margin-top: 20px;
     color: var(--main);
+    text-shadow: 1px 1px 0px white;
     
 
 }
@@ -42,4 +43,7 @@
 }
 .review-text::-webkit-scrollbar{
     display: none;
+}
+.prev-btn{
+    background-color: aliceblue;
 }

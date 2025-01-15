@@ -46,12 +46,26 @@ function Carousel() {
         }}
         modules={[FreeMode, Pagination, Navigation, Autoplay]}
       >
+        <SwiperSlide>
+            <Reviews name={"Stephen A."} review={"The owners were really polite and the food was delicious. If you are looking for authentic street tacos this is the place to hit up. The salsa is really good too. They are open for lunch and dinner. Enjoy😃"}/>
+        </SwiperSlide>
+        <SwiperSlide>
+            <Reviews name={"Jose V."} review={"Top authentic Mexican food truck in Venus! Delicious tacos and best corn in a cup I’ve been able to find (if you like it spicy, you have to try their salsa preparada! Not to mention great customer service every time I come here with my cousin who lives here. They also recently added a huge car port to shade the dining area and more parking spaces!🙌🏻 10/10 would recommend!"}/>
 
-          {reviews.map((review,index)=>(
+        </SwiperSlide>
+        <SwiperSlide>
+            <Reviews name={"Jamal K"} review={"These tacos are authentic as can be.  They’re so so good.  This place is a must try.  The staff was very nice and kind.  Great family vibe.  I would definitely come back as a regular."}/>
+
+        </SwiperSlide>
+        <SwiperSlide>
+            <Reviews name={"Ashley L"} review={"The food is delicious, fresh, & authentic. I love their tacos. They cook them fresh and serve them hot. The sautéed onions are so good. Add lime, cilantro & salsa and they’re perfect. I also really enjoy the elote. Great food. Take home or dine out on the little patio. The owners are always so friendly. We’ll be back again for sure."}/>
+
+        </SwiperSlide>
+          {/* {reviews.map((review,index)=>(
             <SwiperSlide key={index}>
               <Reviews name={review.author_title} review={review.review_text} image={review.author_image} reviewlink={review.review_link}/>
             </SwiperSlide>
-          ))}
+          ))} */}
 
         </Swiper>
 

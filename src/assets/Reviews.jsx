@@ -7,7 +7,7 @@ function Reviews({name,review,image,reviewlink}) {
   return (
     <div className='review-container'>
         <div className='review-image'>
-          {image?<img src={image} width="100%" alt={name}/>:<FontAwesomeIcon icon={faUserCircle} size='4x'/>}
+          <FontAwesomeIcon icon={faUserCircle} color='white' size='4x'/>
 
         </div>
 
