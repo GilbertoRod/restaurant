@@ -44,6 +44,13 @@
 .review-text::-webkit-scrollbar{
     display: none;
 }
-.prev-btn{
-    background-color: aliceblue;
+
+.review-google-logo-container{
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.review-google-logo{
+    width: 30px;
 }

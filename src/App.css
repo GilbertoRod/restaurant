@@ -6,6 +6,7 @@ html,body{
 :root{
   /* --main:rgb(46, 221, 87); */
   --main:rgb(6, 116, 31);
+  --contrast: rgb(17, 17, 17);
   font-family:Oswald ;
 }
 

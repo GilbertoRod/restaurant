@@ -10,7 +10,7 @@ import Reviews from '../assets/Reviews';
 function Carousel() {
   
   return (
-    <div className='reviews'>
+    <div className='reviews' >
         <h1 className='reviews-title'>OUR REVIEWS</h1>
         <Swiper
         breakpoints={{
