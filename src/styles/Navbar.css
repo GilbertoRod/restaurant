@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
 
-     background: rgb(255, 255, 255);
+     background: white;
     color: rgb(0, 0, 0);
     position: fixed;
     box-sizing: border-box;
@@ -38,29 +38,32 @@
   }
   
   .menu-icon .bar {
-    background: rgb(27, 27, 27);
+    background: var(--main);
     border-radius: 10px;
     height: 0.25rem;
     width: 100%;
     transition: all 0.3s;
-    border: .5px solid black;
+
   }
-  
+  .menu-icon:hover .bar{
+    background: rgb(255, 255, 255);
+    border: 1px solid black;
+  }
   .menu-icon.open .bar:nth-child(1) {
     transform: rotate(45deg) translate(9px, 7px);
-    background: white;
+
 
   }
   
   .menu-icon.open .bar:nth-child(2) {
     opacity: 0;
-    background: white;
+
 
   }
   
   .menu-icon.open .bar:nth-child(3) {
     transform: rotate(-45deg) translate(6px, -5px);
-    background: white;
+
 
   }
   

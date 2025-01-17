@@ -8,24 +8,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Carousel from './Carousel'
 import { faLocationDot} from '@fortawesome/free-solid-svg-icons'
 import ImageSlides from './ImageSlides'
+import About from '../Home/About'
 
 
 function Home() {
   return (
 
     <div className='home'>
-        {/* <div className='hero-container'>
-
-            <img src={hero} className='hero-image'/>
-            <div className='home-text'>
-              <h1 className='home-title'>Mouthwatering. Mobile. Mexican.</h1>
-              <h3>Bold Tacos with Soul. Because the Best Bites Start with the Cravings You Can't Ignore.</h3>
-            </div>
-        </div> */}
-
-
-
-
         <div className='home-page-supercontainer'>
         <div className='home-menu-container'>
           <div className='transition-black-div'/>
@@ -34,7 +23,7 @@ function Home() {
           <div className='home-menu-text-container'>
             <div className='home-menu-text'>
               <div className='home-menu-text-content'>
-                <h1 style={{color:"white"}}>DELICIOUS VARIETY YOU CAN'T REFUSE!</h1>
+                <h1 style={{color:"var(--contrast)", textShadow:"2px 2px 0px white"}}>DELICIOUS VARIETY YOU CAN'T REFUSE!</h1>
                 <button>VIEW MENU</button>
               </div>
             </div>
@@ -46,55 +35,40 @@ function Home() {
 
 
         <div className='home-content-supercontainer'>
+          <About/>
+          <div className='welcome-container'>
+            <div className='welcome-img'>
+              <img className='welcome-img-alt' src={welcome}/>
+            </div>
+            <div className='welcome-text'>
+              <h1 className='welcome-text-title'>WELCOME TO STREET TACOS Y MAS!</h1>
+              <img className='welcome-img-mobile' src={welcome}/>
 
+              <p data-aos="flip-up">A family-owned food truck in Venus, TX, serving authentic Mexican flavors made with love and tradition. Our menu features tacos, tortas, burritos, and quesadillas crafted with fresh ingredients. At Street Tacos Y Mas, we’re all about great food and a welcoming community. Come enjoy a taste of Mexico with every bite!
+              {/* A Family-owned food truck right here in Venus, TX! We’re passionate about bringing you the authentic flavors of Mexico, crafted with love and tradition, and served straight to your neighborhood.
 
+              Our menu features all your Mexican food favorites, from tacos and tortas to burritos and quesadillas, each made with the freshest ingredients. Whether you’re in the mood for something classic or a new twist on an old favorite, we've got something to satisfy every craving.
 
+              At Street Tacos Y Mas, we believe in more than just great food – we believe in creating a community where everyone feels welcome. Every dish we serve is made with care, bringing you a taste of tradition in every bite.
 
-        <div className='welcome-container'>
-          <div className='welcome-img'>
-            <img className='welcome-img-alt' src={welcome}/>
+              So come hungry, bring your family and friends, and enjoy a meal made with the spirit of Mexican hospitality. We’re here to make your day a little brighter and your meal a lot more delicious! */}
+              </p>
+            </div>
           </div>
-          <div className='welcome-text'>
-            <h1 className='welcome-text-title'>WELCOME TO STREET TACOS Y MAS!</h1>
-            <img className='welcome-img-mobile' src={welcome}/>
 
-            <p data-aos="flip-up">A family-owned food truck in Venus, TX, serving authentic Mexican flavors made with love and tradition. Our menu features tacos, tortas, burritos, and quesadillas crafted with fresh ingredients. At Street Tacos Y Mas, we’re all about great food and a welcoming community. Come enjoy a taste of Mexico with every bite!
-            {/* A Family-owned food truck right here in Venus, TX! We’re passionate about bringing you the authentic flavors of Mexico, crafted with love and tradition, and served straight to your neighborhood.
 
-            Our menu features all your Mexican food favorites, from tacos and tortas to burritos and quesadillas, each made with the freshest ingredients. Whether you’re in the mood for something classic or a new twist on an old favorite, we've got something to satisfy every craving.
 
-            At Street Tacos Y Mas, we believe in more than just great food – we believe in creating a community where everyone feels welcome. Every dish we serve is made with care, bringing you a taste of tradition in every bite.
+          <div>
+            <h1 className='location-text-title'>
+              OUR FOOD
+            </h1>
+            <div className='serve-img-container'>
+                  <ImageSlides images={['https://cdn.concreteplayground.com/content/uploads/2017/06/beerbeautifultruthoart2_klow_smallres_9.jpg','https://hips.hearstapps.com/hmg-prod/images/chicken-quesadillas-index-668eeabf1a2c7.jpg?crop=0.8885870590454631xw:1xh;center,top&resize=1200:*']}/>
 
-            So come hungry, bring your family and friends, and enjoy a meal made with the spirit of Mexican hospitality. We’re here to make your day a little brighter and your meal a lot more delicious! */}
-            </p>
+
+
+            </div>
           </div>
-        </div>
-
-
-
-        <div>
-          <h1 className='location-text-title'>OUR FOOD</h1>
-          <div className='serve-img-container'>
-
-
-
-                <ImageSlides images={['https://cdn.concreteplayground.com/content/uploads/2017/06/beerbeautifultruthoart2_klow_smallres_9.jpg','https://hips.hearstapps.com/hmg-prod/images/chicken-quesadillas-index-668eeabf1a2c7.jpg?crop=0.8885870590454631xw:1xh;center,top&resize=1200:*']}/>
-
-
-
-          </div>
-        </div>
-
-
-        
-
-
-
-
-
-
-
-
           <Carousel/>
 
 
@@ -124,7 +98,7 @@ function Home() {
                 Sunday: 12 PM - 9 PM<br/>
               </p>
             </div>
-            <div className='empty-location-text'/>
+
           </div>
           <div className='map-holder'>
 
