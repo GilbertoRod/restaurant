@@ -40,17 +40,7 @@ function Home() {
 
 
 
-          <div>
-            <h1 className='location-text-title'>
-              OUR FOOD
-            </h1>
-            <div className='serve-img-container'>
-                  <ImageSlides images={['https://cdn.concreteplayground.com/content/uploads/2017/06/beerbeautifultruthoart2_klow_smallres_9.jpg','https://hips.hearstapps.com/hmg-prod/images/chicken-quesadillas-index-668eeabf1a2c7.jpg?crop=0.8885870590454631xw:1xh;center,top&resize=1200:*']}/>
-
-
-
-            </div>
-          </div>
+          
           <Carousel/>
 
 

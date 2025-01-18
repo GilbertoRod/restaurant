@@ -1,21 +1,21 @@
 
 /* Pagination dots */
 .swiper-pagination-bullet {
-    background-color: #000000;
+    background-color: #c0bbbb;
     opacity: 1;
-    width: 10px;
-    height: 10px;
+    width: 14px;
+    height: 14px;
   }
 
 /* Active pagination dot */
 .swiper-pagination-bullet-active {
-background-color: rgb(200, 200, 200);
+background-color: var(--main);
 
 }
 
   /* Next button */
 .swiper-button-next {
-    color: rgb(255, 255, 255);
+    color: var(--main)
 
 
 
@@ -23,7 +23,7 @@ background-color: rgb(200, 200, 200);
   }
 /* Previous button */
 .swiper-button-prev {
-color: rgb(255, 255, 255);
+color: var(--main)
 
 
 
@@ -36,3 +36,9 @@ width: 50px;
 height: 50px;
 
 }
+.swiper-slide{
+  justify-content: center;
+  display: flex;
+}
+
+
