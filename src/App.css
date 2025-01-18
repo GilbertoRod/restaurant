@@ -8,12 +8,21 @@ html,body{
   /* --main:rgb(46, 221, 87); */
   --main:rgb(6, 116, 31);
   --contrast: rgb(17, 17, 17);
+  --comp:#74065B;
   font-family:Oswald ;
 }
 
 @font-face {
   font-family:Oswald ;
   src: url('./assets/fonts/Oswald-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family:Titan ;
+  src: url('./assets/fonts/TitanOne-Regular.ttf');
+}
+@font-face {
+  font-family:Leckerli ;
+  src: url('./assets/fonts/LeckerliOne-Regular.ttf');
 }
 img {
   display: block;
