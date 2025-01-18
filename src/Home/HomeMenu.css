@@ -19,7 +19,7 @@ align-items: center;
 
 }
 .home-menu-overlay{
-  background: url("");
+  background: url("../assets/ov.svg");
   background-position: center;
   background-size: cover;
   position: absolute;
