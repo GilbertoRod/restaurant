@@ -3,7 +3,7 @@
   flex-direction: row; /* Ensure horizontal alignment */
   justify-content: space-between; /* Optional, adds spacing between items */
   width: 100%;
-
+  max-width: 1700px;
   align-items: center; /* Center content vertically */
   gap: 20px; /* Optional, adjusts spacing between the two sections */
 }

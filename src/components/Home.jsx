@@ -10,6 +10,7 @@ import { faLocationDot} from '@fortawesome/free-solid-svg-icons'
 import ImageSlides from './ImageSlides'
 import About from '../Home/About'
 import HomeMenu from '../Home/HomeMenu'
+import Reviews from '../Home/Reviews'
 
 
 function Home() {
@@ -35,17 +36,9 @@ function Home() {
 
         <About/>
         <HomeMenu/>
+        <Reviews/>
         <div className='home-content-supercontainer'>
-          
-
-
-
-          
           <Carousel/>
-
-
-
-
         </div>
 
         
