@@ -23,6 +23,7 @@ function HomeMenu() {
   return (
     <div className='home-menu'>
       <div className='color-block-1'/>
+      <div className='home-menu-overlay'/>
       <p className='home-menu-slogan' data-aos="slide-right">SATISFY YOUR CRAVINGS</p>
       <p className='home-menu-title' data-aos="slide-left">OUR KITCHEN</p>
       <div className='home-menu-items'>
@@ -49,16 +50,16 @@ function HomeMenu() {
               modules={[FreeMode, Pagination, Navigation, Autoplay]}
             >
               <SwiperSlide>
-                  <MenuCard image={"https://travelfoodatlas.com/wp-content/uploads/2021/03/torta-cubana-720x720.jpg"} title={"Tortas"}/>
+                  <MenuCard image={"https://travelfoodatlas.com/wp-content/uploads/2021/03/torta-cubana-720x720.jpg"} title={"TORTAS"}/>
               </SwiperSlide>
               <SwiperSlide>
-                <MenuCard image="https://www.recipetineats.com/tachyon/2018/06/Quesadillas_4.jpg" title="QUESADILLAS"/>
+                <MenuCard image="https://lh3.googleusercontent.com/p/AF1QipOlZrhRAexB0tn2ydfc36M1Riq-k0RQ76ZP-Vvp=s1360-w1360-h1020" title="QUESADILLAS"/>
               </SwiperSlide>
               <SwiperSlide>
-                <MenuCard image={"https://www.thecookierookie.com/wp-content/uploads/2024/05/street-tacos-recipe-2.jpg"} title={"Tacos"}/>
+                <MenuCard image={"https://lh3.googleusercontent.com/p/AF1QipPXvtbmNsbyPhe3UZuVUvHjOY7533M8sWojl5H5=s1360-w1360-h1020"} title={"TACOS"}/>
               </SwiperSlide>
               <SwiperSlide>
-              <MenuCard image="https://www.seriouseats.com/thmb/lOdEqFZsV3LOzX5Pc2Y6XCJuvTs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2020__10__20201002-mission-style-burrito-jillian-atkinson-2-6841455590ed4c3981529b232166643a.jpg" title="Burritos"/>
+              <MenuCard image="https://www.seriouseats.com/thmb/lOdEqFZsV3LOzX5Pc2Y6XCJuvTs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2020__10__20201002-mission-style-burrito-jillian-atkinson-2-6841455590ed4c3981529b232166643a.jpg" title="BURRITOS"/>
               </SwiperSlide>
             </Swiper>
             

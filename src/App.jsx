@@ -8,7 +8,7 @@ import 'aos/dist/aos.css'; // Import AOS styles
 import { useEffect } from 'react'
 function App() {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true, offset:500});
+    AOS.init({ duration: 1000, once: true, offset:300});
   }, [])
 
   return (
