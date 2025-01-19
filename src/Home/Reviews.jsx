@@ -13,8 +13,8 @@ import Review from '../assets/Review'
 function Reviews() {
   return (
     <div className='home-reviews'>
-      <p className='home-reviews-slogan'>WORDS FROM OUR FOODIES</p>
-      <p className='home-reviews-title'>OUR REVIEWS</p>
+      <p className='home-reviews-slogan' data-aos="slide-right">WORDS FROM OUR FOODIES</p>
+      <p className='home-reviews-title' data-aos="slide-left">OUR REVIEWS</p>
       
 
 
