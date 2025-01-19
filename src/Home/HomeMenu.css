@@ -34,7 +34,7 @@
   font-size: 50px;
   margin: 0;
   text-align: center;
-  color: var(--comp);
+  color: var(--contrast);
   text-shadow: 1px 1px black;
 }
 .home-menu-title{

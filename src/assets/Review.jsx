@@ -1,14 +1,14 @@
 import React from 'react'
-import '../styles/Carousel.css'
+import '../styles/Review.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { faUserCircle } from '@fortawesome/free-solid-svg-icons'
 import google from '../assets/google.png'
-function Reviews({name,review,image,reviewlink}) {
+function Review({name,review,image,reviewlink}) {
   return (
     <div className='review-container' data-aos="zoom-in">
         <div className='review-image'>
-          <FontAwesomeIcon icon={faUserCircle} color='white' size='4x'/>
+
 
         </div>
 
@@ -35,4 +35,4 @@ function Reviews({name,review,image,reviewlink}) {
   )
 }
 
-export default Reviews
+export default Review
