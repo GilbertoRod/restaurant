@@ -33,7 +33,7 @@ function HamburgerMenu() {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/" onClick={toggleMenu}>
+          <NavLink to="/about" onClick={toggleMenu}>
             ABOUT
           </NavLink>
         </li>

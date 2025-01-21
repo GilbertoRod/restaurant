@@ -250,22 +250,35 @@
 
 
 /*Location & Business hours*/
+.location-wrapper{
+    background-color: var(--main);
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
   .location-super-container {
     display: flex;
     position: relative;
     width: 100%;
     margin: 80px 0px;
     max-width: 1700px;
+    background-color: transparent;
+    max-width: 1700px;
+    padding: 10px;
+    gap: 10px;
 }
 
 .location-container {
     font-family: Oswald;
-    padding: 0px 10px;
+
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 0px;
     box-sizing: border-box;
+
     width: 100%;
 }
 
@@ -303,7 +316,7 @@
     text-align: center;
     font-family: Titan;
     font-size: 60px;
-    color: var(--contrast);
+    color: var(--main);
 }
 
 .google-map {
@@ -324,7 +337,7 @@
 @media screen and (max-width: 1300px) {
     .location-super-container {
         display: block;
-        padding: 0px;
+
         margin-top: 80px;
         height: initial;
     }
@@ -332,7 +345,7 @@
         height: 500px;
     }
     .map-holder {
-        padding: 10px 10px 0;
+    
 
     }
 

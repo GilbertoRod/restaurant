@@ -39,10 +39,11 @@ function Home() {
         <Reviews/>
 
         
+        <div className='location-wrapper'>
 
         <div className='location-super-container'>
           <div className='location-container'>
-            <div className='location-text-info' data-aos="flip-left">
+            <div className='location-text-info' data-aos="slide-right">
               <h1 className='location-text-title'>LOCATION &amp; BUSINESS HOURS</h1>
               <p>
                 <a href='https://maps.app.goo.gl/rr9R4xcZq6C3WJ1W6' target='_blank'>
@@ -69,6 +70,7 @@ function Home() {
             allowFullScreen={true}
             loading="lazy" 
           referrerPolicy="no-referrer-when-downgrade"/>
+          </div>
           </div>
         </div>
       </div>
