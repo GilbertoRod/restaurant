@@ -2,8 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-     background: white;
+    background: white;
     color: rgb(0, 0, 0);
     position: fixed;
     box-sizing: border-box;
@@ -15,6 +14,7 @@
     left: 10px;
     width: initial;
     z-index: 1000;
+    font-family: Roboto;
   }
   .navbar:hover{
     /* background: linear-gradient(rgba(0, 0, 0, 0.825) 0%, rgba(0, 0, 0, 0) 80%); */
@@ -117,7 +117,7 @@
       top: 0;
       right: 0;
       height: 100%;
-      background-color: rgba(17, 17, 17, 0.98);
+      background-color: rgba(17, 17, 17, 0.993);
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -134,6 +134,7 @@
       margin: 0;
 
     }
+
     .nav-links li a{
         font-size: 40px;
         color: white;

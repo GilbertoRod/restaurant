@@ -50,9 +50,6 @@
   font-family: Titan;
   color: var(--main);
   margin-bottom: 0;
-
-
-
 }
 @media screen and (max-width:900px){
   .about-us-content{
@@ -77,4 +74,16 @@
   .about-us-text{
     font-size: 18px;
   }
+}
+
+
+
+
+
+.faq-accordions{
+  background-color: transparent;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }

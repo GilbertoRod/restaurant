@@ -37,11 +37,6 @@ function HamburgerMenu() {
             ABOUT
           </NavLink>
         </li>
-        <li>
-          <NavLink to="/" onClick={toggleMenu}>
-            FAQ
-          </NavLink>
-        </li>
 
       </ul>
     </nav>

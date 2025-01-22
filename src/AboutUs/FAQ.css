@@ -1,0 +1,77 @@
+.FAQ-accordion {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.accordion-title {
+  width: 100%;
+  background-color: #ffffff;
+  font-family: Titan;
+  border: none;
+  padding: 15px;
+  text-align: left;
+  font-size: 17px;
+
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-title:hover {
+  /* background-color: #eaeaea; */
+}
+
+.accordion-icon {
+  transition: transform 0.3s ease;
+  background-color: rgba(88, 88, 88, 0.158);
+  padding: 8px; /* Equal padding on all sides for a circular shape */
+  border-radius: 50%; /* Make it a circle */
+  color: var(--main);
+  font-size: 20px;
+  width: 30px; /* Fixed width for circle */
+  height: 30px; /* Fixed height for circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.accordion-icon.open {
+  transform: rotate(45deg);
+}
+.content-line{
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.212);
+  margin-bottom: 10px;
+}
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #fff;
+  color: #5a5a5a;
+  padding: 0; /* No padding when collapsed */
+  font-family: Roboto, Helvetica, sans-serif;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+
+}
+
+.accordion-content.expanded {
+  max-height: 200px; /* Adjust based on your content */
+  padding: 15px; /* Padding is applied only when expanded */
+  padding-top: 0px;
+
+}
+
+.accordion-content p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
