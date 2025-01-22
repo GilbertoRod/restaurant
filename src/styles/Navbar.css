@@ -14,7 +14,7 @@
     left: 10px;
     width: initial;
     z-index: 1000;
-    font-family: Roboto;
+    font-family: Titan;
   }
   .navbar:hover{
     /* background: linear-gradient(rgba(0, 0, 0, 0.825) 0%, rgba(0, 0, 0, 0) 80%); */
