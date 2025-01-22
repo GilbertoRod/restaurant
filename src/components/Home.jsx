@@ -40,7 +40,7 @@ function Home() {
 
         
         <div className='location-wrapper'>
-
+        <div className='location-overlay'/>
         <div className='location-super-container'>
           <div className='location-container'>
             <div className='location-text-info' data-aos="slide-right">
