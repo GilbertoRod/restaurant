@@ -37,7 +37,7 @@ function AboutUs() {
         </div>
 
 
-        <div className='faq-container'>
+        <div className='faq-container' data-aos="flip-up">
           <h1 className='about-us-title' >FAQs</h1>
           <div className='faq-accordions'>
             <FAQaccordion title="Are you open every day?" content="Yes We're open everyday! See our Hours down below for more details!"/>
