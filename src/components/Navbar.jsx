@@ -44,7 +44,7 @@ function HamburgerMenu() {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/" onClick={toggleMenu}>
+          <NavLink to="/menu" onClick={toggleMenu}>
             MENU
           </NavLink>
         </li>

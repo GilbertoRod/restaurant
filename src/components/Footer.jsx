@@ -28,7 +28,7 @@ function Footer() {
           </p>
         </div>
         <div className='footer-directory'>
-          <p><a href='/'>HOME</a>  | <a href='/'>MENU</a> | <a href='/about'>ABOUT</a> </p>
+          <p><a href='/'>HOME</a>  | <a href='/menu'>MENU</a> | <a href='/about'>ABOUT</a> </p>
         </div>
   
       </div>
