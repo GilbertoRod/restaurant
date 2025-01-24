@@ -17,8 +17,8 @@ function Menu() {
       <div className="menu-cta">
         <div className='menu-cta-content'>
           <h2>Ready to Order?</h2>
-          <button className="cta-button" onClick={() => window.location.href = 'tel:682-324-4510'}>Call to Order</button>
-          <p>682-324-4510</p>
+          <button className="cta-button" onClick={() => window.location.href = 'tel:682-234-4610'}>Call to Order</button>
+          <p>(682)234-4610</p>
         </div>
       </div>
     </div>
