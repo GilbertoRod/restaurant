@@ -51,7 +51,7 @@ function Menu() {
 
 
 
-        <div className='menu-item' data-aos="slide-left">
+        <div className='menu-item' data-aos="slide-right">
           <img className="menu-item-img" src="https://lh3.googleusercontent.com/p/AF1QipOAwZllFrmOJWJJ6NFKh8spTEV1740Anq2N0BSC=s1360-w1360-h1020"/>
           <h1 className='menu-item-title'>BURRITOS</h1>
           <p className='menu-item-price'>$9.00/ea.</p>
@@ -74,7 +74,7 @@ function Menu() {
 
 
 
-        <div className='menu-item' data-aos="slide-right">
+        <div className='menu-item' data-aos="slide-left">
           <img className="menu-item-img" src="https://travelfoodatlas.com/wp-content/uploads/2021/03/torta-cubana-720x720.jpg"/>
           <h1 className='menu-item-title'>TORTA CUBANA</h1>
           <p className='menu-item-price'>$10.00/ea.</p>
