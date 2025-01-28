@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+  <defs>
+    <pattern id="avocado-slices" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+      <circle cx="25" cy="25" r="10" fill="#6a9d42" />
+      <circle cx="25" cy="25" r="5" fill="#3e5e33" />
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#avocado-slices)" />
+</svg>

@@ -7,13 +7,16 @@ import '../styles/Home.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Carousel from './Carousel'
 import { faLocationDot} from '@fortawesome/free-solid-svg-icons'
-import ImageSlides from './ImageSlides'
+
 import About from '../Home/About'
 import HomeMenu from '../Home/HomeMenu'
 import Reviews from '../Home/Reviews'
+import { Link, useNavigate } from 'react-router-dom'
 
 
 function Home() {
+  const navigate=useNavigate()
+  const handleMenuClick=()=>navigate("/menu")
   return (
 
     <div className='home'>
@@ -23,9 +26,11 @@ function Home() {
           <div className='home-menu-text-container'>
             <div className='home-menu-text'>
               <div className='home-menu-text-content'>
-                <h1 className='home-hero-title'>MADE FRESH, SERVED FAST</h1>
-                <h1 className='home-hero-subtitle'>MEXICAN STREET FOOD</h1>
-                <button className='home-hero-button'>VIEW MENU</button>
+                <h1 className='home-hero-title' data-aos="slide-right">MADE FRESH, SERVED FAST</h1>
+                <h1 className='home-hero-subtitle' data-aos="slide-left">MEXICAN STREET FOOD</h1>
+              
+                <button className='home-hero-button' data-aos="fade-up" onClick={handleMenuClick}>VIEW MENU</button>
+           
               </div>
             </div>
           </div>
@@ -35,7 +40,7 @@ function Home() {
 
 
         <About/>
-        <HomeMenu/>
+        <HomeMenu click={handleMenuClick}/>
         <Reviews/>
 
         

@@ -1,0 +1,192 @@
+/* Hero */
+.menu-page {
+    color: var(--contrast);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #edefed; /* Matches background from your variables */
+  }
+  
+  .menu-hero {
+    background-image: url('../assets/tacos.avif');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    width: 100%;
+    padding: 100px 20px;
+    min-height: 700px;
+    height: 100vh;
+    font-family: Titan;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0% 0% 50% 50% / 0% 0% 10% 10%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.2); /* Slight overlay for contrast */
+  }
+  
+  .menu-hero h1 {
+    text-shadow: 2px 2px 4px black;
+    color: var(--main); /* Use your main color */
+    font-size: 60px;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+  }
+  
+  .menu-hero p {
+    font-size: 50px;
+    color: var(--comp); /* Use your complement color */
+    font-family: Leckerli;
+    text-shadow: 2px 3px 0px rgb(0, 0, 0);
+    margin-top: 0px;
+  }
+  
+  /* Menu */
+  .menu-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 100px;
+    width: 100%;
+  }
+  
+  .menu-title {
+    font-size: 50px;
+    font-family: Titan;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--comp); /* Complement color for consistency */
+    color: white;
+    border-radius: 25px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+  
+  .menu-items {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0px, 500px));
+    justify-content: center;
+    width: 100%;
+    gap: 80px;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .menu-item-img {
+    height: 350px;
+    max-width: 350px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10%;
+    border: 5px solid var(--comp); /* Border color matches your theme */
+  }
+  
+  .menu-item-title {
+    font-family: Leckerli;
+    color: var(--main); /* Main color for item titles */
+    text-shadow: 2px 3px black;
+    margin-top: 15px;
+    font-size: 24px;
+  }
+  
+  .menu-item-price {
+    margin: 5px 0;
+    color: var(--comp); /* Complement color for prices */
+    font-size: 20px;
+  }
+  
+  .menu-item-description {
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    line-height: 1.6;
+    color: #7f8c8d; /* Neutral gray for text readability */
+    background-color: #ecf0f1; /* Light background for descriptions */
+    border-radius: 10px;
+  }
+  
+  /* Call-to-Action */
+  .menu-cta {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    color: white;
+    background: url('../assets/location-2e.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .menu-cta-content {
+    background-color: rgba(255, 255, 255, 0.9); /* Bright background */
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .menu-cta h2 {
+    margin-bottom: 10px;
+    font-family: Titan;
+    font-size: 40px;
+    color: var(--comp); /* Complement color for CTA */
+  }
+  
+  .cta-button {
+    background-color: var(--comp); /* Complement color for button */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: fit-content;
+    transition: all ease-in .15s;
+    font-family: Titan;
+  }
+  
+  .cta-button:hover {
+    background-color: var(--main); /* Change to main color on hover */
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 1100px) {
+    .menu-items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .menu-cta {
+      min-height: 300px;
+    }
+    .menu-cta-content {
+      padding: 20px;
+    }
+  }
+  

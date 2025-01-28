@@ -19,7 +19,7 @@ function MenuCard({image, title}) {
 }
 
 
-function HomeMenu() {
+function HomeMenu({click}) {
   return (
     <div className='home-menu'>
       <div className='color-block-1'/>
@@ -64,7 +64,7 @@ function HomeMenu() {
             </Swiper>
             
       </div>
-      <button className='home-about-more-btn' >VIEW FULL MENU</button>
+      <button className='home-about-more-btn' onClick={click} >VIEW FULL MENU</button>
     </div>
   )
 }

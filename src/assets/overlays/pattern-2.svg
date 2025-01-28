@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+  <defs>
+    <pattern id="grill-marks" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M0,10 L50,10" stroke="#d16f1c" stroke-width="1" />
+      <path d="M0,20 L50,20" stroke="#d16f1c" stroke-width="1" />
+      <path d="M0,30 L50,30" stroke="#d16f1c" stroke-width="1" />
+      <path d="M0,40 L50,40" stroke="#d16f1c" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grill-marks)" />
+</svg>

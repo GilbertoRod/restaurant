@@ -26,7 +26,36 @@
     transition: ease-in .15s;
 
   }
-  
+  .nav-call-btn{
+    background-color: var(--main);
+    box-shadow: 2px 4px black;
+    font-family: Titan;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: all ease-in .15s;
+    border: 1px inset var(--main);
+    margin-left: 40px;
+    width: 150px;
+
+  }
+  @media screen and (max-width:1100px) {
+    .nav-call-btn{
+      margin-left: initial;
+      width: initial;
+
+    }
+  }
+  .nav-call-btn:hover{
+    box-shadow: 0px 0px black;
+
+  }
+
+
+
+
   .menu-icon {
     display: none;
     flex-direction: column;

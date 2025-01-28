@@ -1,7 +1,9 @@
 import React, { useState,useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
 import logo from '../assets/tacoymas.png'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
 
 function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +30,19 @@ function HamburgerMenu() {
 
   return (
     <nav className="navbar">
-      <div className="logo"><img src={logo} className='company-logo' alt='Company Logo'/></div>
+      <div style={{display:"flex", alignItems:"center", gap:"20px"}}>
+      <Link to={'/'}>
+        <div className="logo">
+          <img src={logo} className='company-logo' alt='Company Logo'/>
+        </div>
+      </Link>
+      <a href='tel:+16822344610'>
+        <button className="nav-call-btn">
+          <FontAwesomeIcon icon={faPhoneVolume}/> <span style={{marginLeft:"5px"}}>ORDER NOW</span>
+        </button>
+      </a>
+      </div>
+      
       <div
         className={`menu-icon ${isOpen ? "open" : ""}`}
         onClick={toggleMenu}
