@@ -12,7 +12,7 @@
     font-family: Oswald;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.062);
     margin-top: 90px;
-    height: 400px;
+    height: 450px;
     
 }
 .review-image{
@@ -44,7 +44,7 @@
 
 }
 .review-text::-webkit-scrollbar{
-    display: none;
+
 }
 
 .review-google-logo-container{

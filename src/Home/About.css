@@ -27,6 +27,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center; /* Centers content within this section */
+  /* background: url('../assets/street.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; */
 }
 
 .home-about-title{
@@ -38,6 +42,11 @@
 }
 .home-about-p{
   font-size: 25px;
+}
+.street{
+  width: 100%;
+  display: none;
+  object-fit: contain;
 }
 .home-about-more-btn{
   background-color: var(--main);

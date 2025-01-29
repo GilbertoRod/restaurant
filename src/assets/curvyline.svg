@@ -1,0 +1,24 @@
+<svg 
+  className="curvy-line" 
+  viewBox="0 0 500 100" 
+  fill="none" 
+  stroke="black" 
+  strokeWidth="5" 
+  xmlns="http://www.w3.org/2000/svg"
+  data-aos="fade-in"
+>
+  <path 
+    d="your-path-data-here" 
+    strokeLinecap="round"
+    strokeDasharray="500" 
+    strokeDashoffset="500"
+  >
+    <animate 
+      attributeName="stroke-dashoffset" 
+      from="500" 
+      to="0" 
+      dur="1.5s" 
+      fill="freeze"
+    />
+  </path>
+</svg>

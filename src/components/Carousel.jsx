@@ -32,6 +32,7 @@ function Carousel() {
           pauseOnMouseEnter: true, // Pause autoplay on mouse hover
         }}
         modules={[FreeMode, Pagination, Navigation, Autoplay]}
+        
       >
         <SwiperSlide>
             <Review name={"Stephen A."} review={"The owners were really polite and the food was delicious. If you are looking for authentic street tacos this is the place to hit up. The salsa is really good too. They are open for lunch and dinner. Enjoy😃"}/>

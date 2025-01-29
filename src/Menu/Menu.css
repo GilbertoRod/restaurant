@@ -4,8 +4,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: 
-  url('../assets/overlays/pattern.svg');
+  /* background-image: 
+  url('../assets/overlays/pattern.svg'); */
   background-size: cover;
   background-position: center, center, 0 0;
   background-repeat: no-repeat, no-repeat, repeat;
@@ -66,12 +66,12 @@
 
 
   margin-top: 90px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   display: flex;
   gap: 10px;
   text-align: center;
   padding: 20px;
-
+  padding-bottom: 0px;
   font-family: Leckerli;
   font-weight: bold;
   color: var(--main); /* Match the green tone from your main menu */
@@ -80,6 +80,19 @@
 .menu-title div{
   font-size: 50px;
 }
+
+.curvy-line {
+  display: block;
+
+
+  width: 100%;
+}
+
+
+[data-aos="draw"] {
+  stroke-dashoffset: 0; /* Reveal the path when scrolled into view */
+}
+
 .our-menu{
   text-shadow: 2px 3px rgb(0, 0, 0);
   font-size: 50px;

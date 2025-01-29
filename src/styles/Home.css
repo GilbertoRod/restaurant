@@ -266,6 +266,9 @@
     left: 0;
     right: 0;
     background: url('../assets/ov-2.svg');
+    background: url('../assets/overlays/pattern-2.svg');
+    /* background: url('../assets/tacos.svg'); */
+
     width: 100%;
     height: 100%;
 }

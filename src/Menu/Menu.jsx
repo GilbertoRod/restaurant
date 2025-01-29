@@ -1,6 +1,8 @@
 import React from 'react'
 import tacosMenu from '../assets/tacosmenu.jpg'
 import qmenu from '../assets/quesadillamenu.jpg'
+import curvy from '../assets/line.svg'
+
 import './Menu.css'
 function Menu() {
 
@@ -16,9 +18,15 @@ function Menu() {
       <div className="menu-body">
         <div className='menu-title'>
           <div>🌮</div>
-          <div className='our-menu'>OUR MENU</div>
+          <div className='our-menu'>
+            <div>OUR MENU</div>
+            {/* <img src={curvy} className='curvy-line'/> */}
+          </div>
           <div>🌮</div>
         </div>
+        
+
+
 
 
 

@@ -18,7 +18,7 @@
 
 }
 .home-menu-overlay{
-  background: url("../assets/ov.svg");
+  background: url('../assets/ov.svg'); 
   background-position: center;
   background-size: cover;
   position: absolute;
@@ -36,12 +36,17 @@
   text-align: center;
   color: var(--contrast);
   text-shadow: 1px 1px black;
+  background-color: rgba(6, 116, 32, 0.517);
+  border-radius: 20px;
 }
 .home-menu-title{
   font-family: Titan ;
   font-size: 60px;
   margin: 0;
   color:white;
+  background-color: rgba(6, 116, 32, 0.517);
+
+  border-radius: 20px;
   text-align: center;
 }
 .home-menu-items{
