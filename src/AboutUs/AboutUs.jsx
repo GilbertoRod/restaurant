@@ -16,10 +16,14 @@ function AboutUs() {
             <p>We are a family-owned food truck serving the Venus, TX community with authentic Mexican flavors made from cherished recipes passed down through generations. Our journey began with a shared love for food and a desire to bring the vibrant tastes of Mexico to our neighbors. At Street Tacos Y Mas, every dish is crafted with love, tradition, and the freshest ingredients.</p>
 
             <h2>The Meaning Behind Street Tacos Y Mas</h2>
+            
+            <div className='page-divider'/>
 
             <p>We chose the name "Street Tacos Y Mas" to highlight our focus on authentic street-style Mexican cuisine, while "Y Mas" represents the variety and creativity we bring to our menu. It’s more than just food—it’s about sharing a piece of our culture with every meal.</p>
 
             <h2>Why Choose Street Tacos Y Mas?</h2>
+
+            <div className='page-divider'/>
 
             <p><b>Authentic Flavors:</b> Each dish is made with fresh, high-quality ingredients and traditional recipes for an unforgettable taste.</p>
 

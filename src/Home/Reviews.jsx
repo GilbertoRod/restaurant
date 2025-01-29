@@ -10,6 +10,7 @@ import { FreeMode, Pagination, Navigation,Autoplay } from 'swiper/modules';
 import '../styles/Swiper.css';
 import Review from '../assets/Review'
 
+
 function Reviews() {
   return (
     <div className='home-reviews'>

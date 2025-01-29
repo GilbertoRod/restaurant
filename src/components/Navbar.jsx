@@ -36,11 +36,11 @@ function HamburgerMenu() {
           <img src={logo} className='company-logo' alt='Company Logo'/>
         </div>
       </Link>
-      <a href='tel:+16822344610'>
+      {/* <a href='tel:+16822344610'>
         <button className="nav-call-btn">
           <FontAwesomeIcon icon={faPhoneVolume}/> <span style={{marginLeft:"5px"}}>ORDER NOW</span>
         </button>
-      </a>
+      </a> */}
       </div>
       
       <div

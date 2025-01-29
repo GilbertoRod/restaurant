@@ -115,6 +115,10 @@
     flex-direction: column;
     align-items: center;
   }
+  /* .menu-item:last-child::after{
+    content: none;
+    background-color: none;
+  } */
 
 }
 
@@ -130,6 +134,15 @@
   background-color: #edefed;
   padding: 30px;
   border-radius: 40px;
+  
+}
+
+.menu-item::after{
+  content: "";
+  height: 3px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: var(--main);
 }
 
 .menu-item-img{
@@ -164,7 +177,7 @@
 }
 .menu-item-description{
   color: var(--contrast); /* Neutral gray for text readability */
-
+  flex-grow: 1;
   padding: 10px;
   border-radius: 10px;
   font-size: 18px;
