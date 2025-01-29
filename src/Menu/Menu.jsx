@@ -1,6 +1,7 @@
 import React from 'react'
 import tacosMenu from '../assets/tacosmenu.jpg'
 import qmenu from '../assets/quesadillamenu.jpg'
+import elote from '../assets/elote.jpg'
 import './Menu.css'
 function Menu() {
 
@@ -124,7 +125,7 @@ function Menu() {
           </div>
 
           <div className='menu-item' data-aos="fade-left">
-            <img className="menu-item-img" src="https://insearchofyummyness.com/wp-content/uploads/2022/07/Mexican-Corn-Cup-Feature.jpg"/>
+            <img className="menu-item-img" src={elote}/>
             <h1 className='menu-item-title'>ELOTE</h1>
             <p className='menu-item-price'>$4.00/ea.</p>
             
