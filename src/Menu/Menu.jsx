@@ -16,12 +16,9 @@ function Menu() {
       {/* Menu Categories */}
       <div className="menu-body">
         <div className='menu-title'>
-          <div>🌮</div>
-          <div className='our-menu'>
-            <div>OUR MENU</div>
-            {/* <img src={curvy} className='curvy-line'/> */}
-          </div>
-          <div>🌮</div>
+
+          <div className='our-menu'>🌮 OUR MENU 🌮</div>
+
         </div>
 
 
