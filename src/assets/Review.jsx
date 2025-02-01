@@ -13,7 +13,7 @@ function Review({name,review,image,reviewlink}) {
         </div>
 
         <h1 className='review-name'>
-            {name}
+            {name.toUpperCase()}
         </h1>
 
         <div className='slider-stars'>
