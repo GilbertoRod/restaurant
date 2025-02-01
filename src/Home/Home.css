@@ -358,13 +358,13 @@
         height: initial;
     }
     .google-map {
-    border-radius: 40px;
+    border-radius: 80px;
     height: 500px;
     }
     .location-text-info {
     padding-top: 100px;
     padding-bottom: 100px;
-    border-radius: 154px 63px 154px 63px;
+    border-radius: 80px;
     /* border-radius: 63px; */
 
     }
