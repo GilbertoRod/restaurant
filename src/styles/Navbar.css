@@ -154,7 +154,7 @@
       gap: 2rem;
       width: 100%; /* Take full width */
       transform: translateX(100%); /* Initially off-screen */
-      transition: transform 0.3s ease-in-out;/* Smooth transition */
+      transition: transform 0.3s ease-in-out;
 
     }
   

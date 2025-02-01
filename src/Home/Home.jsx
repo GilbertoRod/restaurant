@@ -3,14 +3,14 @@ import React from 'react'
 import tacos from '../assets/tacos.jpg'
 import welcome from '../assets/welcome.jpg'
 
-import '../styles/Home.css'
+import './Home.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Carousel from './Carousel'
+import Carousel from '../components/Carousel'
 import { faLocationDot} from '@fortawesome/free-solid-svg-icons'
 
-import About from '../Home/About'
-import HomeMenu from '../Home/HomeMenu'
-import Reviews from '../Home/Reviews'
+import About from './About'
+import HomeMenu from './HomeMenu'
+import Reviews from './Reviews'
 import { Link, useNavigate } from 'react-router-dom'
 
 
