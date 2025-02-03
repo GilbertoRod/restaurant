@@ -1,6 +1,8 @@
 import React from 'react'
 import tacosMenu from '../assets/tacosmenu.jpg'
-import qmenu from '../assets/quesadillamenu.jpg'
+import qmenu from '../assets/food/quesadilla.jpg'
+import loadednachos from '../assets/food/loaded-nachos-alt.jpg'
+import kidsnachos from '../assets/food/kids-nachos.jpg'
 import elote from '../assets/elote.jpg'
 import './Menu.css'
 function Menu() {
@@ -108,7 +110,7 @@ function Menu() {
 
 
           <div className='menu-item' data-aos="fade-right">
-            <img className="menu-item-img" src="https://www.simplyrecipes.com/thmb/xTCx1mKCjjPYgGasys_JGafuem0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__04__Nachos-LEAD-3-e6dd6cbb61474c9889e1524b3796601e.jpg"/>
+            <img className="menu-item-img" style={{objectPosition:" center"}} src={loadednachos}/>
             <h1 className='menu-item-title'>LOADED NACHOS</h1>
             <p className='menu-item-price'>$12.00/ea.</p>
             
@@ -198,7 +200,7 @@ function Menu() {
             </div>
 
             <div className='menu-item' data-aos="fade-right">
-              <img className="menu-item-img" src="https://www.fifteenspatulas.com/wp-content/uploads/2022/05/Nacho-Cheese-Sauce.jpg"/>
+              <img className="menu-item-img" style={{objectPosition:"bottom"}} src={kidsnachos}/>
               <h1 className='menu-item-title'>NACHOS</h1>
               <p className='menu-item-price'>$6.00/ea.</p>
               <p className='menu-item-description'>

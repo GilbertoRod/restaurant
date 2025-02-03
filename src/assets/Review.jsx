@@ -26,7 +26,7 @@ function Review({name,review,image,reviewlink}) {
           </div>
 
         <p className='review-text'>
-            {review}
+            " {review} "
         </p>
         <div className='review-google-logo-container'>
           <img className='review-google-logo' src={google}/>

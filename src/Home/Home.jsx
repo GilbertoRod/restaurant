@@ -1,6 +1,6 @@
 import React from 'react'
 
-import tacos from '../assets/tacos.jpg'
+import hero from '../assets/food/hero-main.jpg'
 import welcome from '../assets/welcome.jpg'
 
 import './Home.css'
@@ -22,7 +22,7 @@ function Home() {
     <div className='home'>
         <div className='home-page-supercontainer'>
         <div className='home-menu-container'>
-          <img src={tacos} className='home-image'/>
+          <img src={hero} className='home-image'/>
           <div className='home-menu-text-container'>
             <div className='home-menu-text'>
               <div className='home-menu-text-content'>
