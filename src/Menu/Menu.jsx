@@ -4,6 +4,7 @@ import qmenu from '../assets/food/quesadilla.jpg'
 import loadednachos from '../assets/food/loaded-nachos-alt.jpg'
 import kidsnachos from '../assets/food/kids-nachos.jpg'
 import elote from '../assets/elote.jpg'
+import loadedfries from '../assets/food/papas-con-carne.jpg'
 import './Menu.css'
 function Menu() {
 
@@ -132,6 +133,22 @@ function Menu() {
               
 
               Elote in a cup topped with Salsa, Sour Cream, Cheese, Mayonnaise, and Butter
+            </p>
+          </div>
+
+
+
+
+
+
+
+          <div className='menu-item' data-aos="fade-right">
+            <img className="menu-item-img" src={loadedfries}/>
+            <h1 className='menu-item-title'>CARNE ASADA FRIES</h1>
+            <p className='menu-item-price'>$9.00/ea.</p>
+            
+            <p className='menu-item-description'>
+              Crinkle cut frnech fries topped with carne asada, cheese, sour cream, and jalapenos
             </p>
           </div>
 

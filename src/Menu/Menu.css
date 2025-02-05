@@ -27,7 +27,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+  border-radius: 0% 0% 50% 50% / 0% 0% 2% 2% ;
 }
 
 .menu-hero h1 {
@@ -166,9 +166,9 @@
 }
 
 .menu-item-title{
-  font-family: Leckerli;
+  font-family: Titan;
   color: var(--main);
-  text-shadow: 2px 3px black;
+  text-shadow: 2px 3px 1px black;
 
 }
 .menu-item-price{

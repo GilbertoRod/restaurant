@@ -12,6 +12,7 @@ import About from './About'
 import HomeMenu from './HomeMenu'
 import Reviews from './Reviews'
 import { Link, useNavigate } from 'react-router-dom'
+import HomeBanner from './HomeBanner'
 
 
 function Home() {
@@ -42,7 +43,7 @@ function Home() {
         <About/>
         <HomeMenu click={handleMenuClick}/>
         <Reviews/>
-
+        <HomeBanner/>
         
         <div className='location-wrapper'>
         <div className='location-overlay'/>

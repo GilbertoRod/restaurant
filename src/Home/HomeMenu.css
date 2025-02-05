@@ -57,6 +57,12 @@
 }
 
 
+
+
+
+
+/* MENU CARDS*/
+
 .menu-card{
 width: 90%;
   background-color: white;
@@ -73,7 +79,7 @@ width: 90%;
   height: 400px;
   object-fit: cover;
   object-position: center;
-  box-shadow: 0px 0px 5px rgb(0, 0, 0);
+  /* box-shadow: 0px 0px 5px rgb(0, 0, 0); */
 
 }
 .menu-card-title{
