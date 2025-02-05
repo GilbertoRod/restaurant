@@ -13,8 +13,7 @@
 }
 
 .menu-hero {
-  /* background-image: url('https://i.redd.it/w0pbj3n6t3aa1.jpg'); */
-  background-image: url('../assets/food/hero-menu-alt.jpg');
+  background-image: url('../assets/food/hero-menu-alt-2-hq.jpg');
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -29,7 +28,12 @@
   justify-content: center;
   border-radius: 0% 0% 50% 50% / 0% 0% 2% 2% ;
 }
+@media screen and (max-width:800px){
+  .menu-hero{
+  background-image: url('../assets/food/hero-menu-alt-2.jpg');
 
+  }
+}
 .menu-hero h1 {
 
   text-shadow: 2px 2px 4px black;

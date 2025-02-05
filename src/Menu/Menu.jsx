@@ -66,7 +66,7 @@ function Menu() {
 
 
           <div className='menu-item' data-aos="fade-right">
-            <img className="menu-item-img" src="https://lh3.googleusercontent.com/p/AF1QipOAwZllFrmOJWJJ6NFKh8spTEV1740Anq2N0BSC=s1360-w1360-h1020"/>
+            <img className="menu-item-img" src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"/>
             <h1 className='menu-item-title'>BURRITOS</h1>
             <p className='menu-item-price'>$9.00/ea.</p>
             
@@ -93,7 +93,7 @@ function Menu() {
 
 
           <div className='menu-item' data-aos="fade-left">
-            <img className="menu-item-img" src="https://travelfoodatlas.com/wp-content/uploads/2021/03/torta-cubana-720x720.jpg"/>
+            <img className="menu-item-img" src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"/>
             <h1 className='menu-item-title'>TORTA CUBANA</h1>
             <p className='menu-item-price'>$10.00/ea.</p>
             
@@ -199,7 +199,7 @@ function Menu() {
         <div className='menu-items'>
 
             <div className='menu-item' data-aos="fade-right">
-              <img className="menu-item-img" src="https://www.cookwithnabeela.com/wp-content/uploads/2024/05/CheeseFries.webp"/>
+              <img className="menu-item-img" src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"/>
               <h1 className='menu-item-title'>PAPAS CON QUESO</h1>
               <p className='menu-item-price'>$6.00/ea.</p>
               <p className='menu-item-description'>
@@ -208,8 +208,8 @@ function Menu() {
             </div>
 
             <div className='menu-item' data-aos="fade-left">
-              <img className="menu-item-img" src="https://popmenucloud.com/cdn-cgi/image/width%3D1200%2Cheight%3D1200%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/tgpbaezf/fc40418c-43e1-4f59-8022-25ba6ac1bb6e.jpg"/>
-              <h1 className='menu-item-title'>QUSADILLA CON PAPAS</h1>
+              <img className="menu-item-img" src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"/>
+              <h1 className='menu-item-title'>QUESADILLA CON PAPAS</h1>
               <p className='menu-item-price'>$6.00/ea.</p>
               <p className='menu-item-description'>
               Served in a tortilla with Cheese, Carne Asada, and a side of French Fries
@@ -226,7 +226,7 @@ function Menu() {
             </div>
 
             <div className='menu-item' data-aos="fade-left">
-              <img className="menu-item-img" src="https://www.mamagourmand.com/wp-content/uploads/2017/11/stuffed-churros-3-500x500.jpg"/>
+              <img className="menu-item-img" src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"/>
               <h1 className='menu-item-title'>CHURROS</h1>
               <p className='menu-item-price'>$6.00/ea.</p>
               <p className='menu-item-description'>
