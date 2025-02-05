@@ -120,6 +120,9 @@
     text-decoration: underline;
     text-decoration-color: var(--main);
   }
+  .nav-links-s{
+    display: none;
+  }
   
   /* Responsive Styles */
   @media (max-width: 1100px) {
@@ -140,8 +143,11 @@
     .menu-icon {
       display: flex;
     }
-  
-    .nav-links {
+    .nav-links{
+      display: none;
+    }
+    .nav-links-s {
+      display: flex;
       position: fixed;
       top: 0;
       right: 0;
@@ -158,12 +164,12 @@
 
     }
   
-    .nav-links.active {
+    .nav-links-s.active {
       transform: translateX(0); /* Slide in */
       margin: 0;
 
     }
-    .nav-links li a{
+    .nav-links-s li a{
         font-size: 40px;
         color: white;
     }

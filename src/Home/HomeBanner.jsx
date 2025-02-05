@@ -9,7 +9,7 @@ function HomeBanner() {
         <div className='home-banner-text-container'>
             <p>READY TO ORDER?</p>
             <h1>CALL US NOW!</h1>
-            <button className='banner-btn'><FontAwesomeIcon icon={faPhoneVolume} color='var(--main)'/> (682) 234-4610</button>
+            <a href='tel:+16822344610'><button className='banner-btn'><FontAwesomeIcon icon={faPhoneVolume} color='var(--main)'/> (682) 234-4610</button></a>
         </div>
     </div>
   )

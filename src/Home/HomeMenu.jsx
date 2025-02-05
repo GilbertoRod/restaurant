@@ -4,6 +4,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
+import tacos from '../assets/food/tacos-1.jpg'
+import quesadillas from '../assets/food/quesadilla.jpg'
+import nachos from '../assets/food/loaded-nachos-alt.jpg'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode, Pagination, Navigation,Autoplay } from 'swiper/modules';
 import '../styles/Swiper.css';
@@ -29,15 +32,16 @@ function HomeMenu({click}) {
       <div className='home-menu-items'>
        <Swiper
               breakpoints={{
-                1500:{
+                1200:{
                   slidesPerView: 3,
-                  spaceBetween: 15
+
                 },
-                860: {
+                760: {
                   slidesPerView: 2,
-                  spaceBetween: 15
+
                 }
               }}
+              spaceBetween={15}
               freeMode={true}
               navigation={true}
               pagination={{ clickable: true }}
@@ -50,16 +54,14 @@ function HomeMenu({click}) {
               modules={[FreeMode, Pagination, Navigation, Autoplay]}
             >
               <SwiperSlide>
-                  <MenuCard image={"https://travelfoodatlas.com/wp-content/uploads/2021/03/torta-cubana-720x720.jpg"} title={"TORTAS"}/>
+                <MenuCard image={tacos} title={"TACOS"}/>
               </SwiperSlide>
               <SwiperSlide>
-                <MenuCard image="https://lh3.googleusercontent.com/p/AF1QipOlZrhRAexB0tn2ydfc36M1Riq-k0RQ76ZP-Vvp=s1360-w1360-h1020" title="QUESADILLAS"/>
+                <MenuCard image={quesadillas} title={"QUESADILLAS"}/>
               </SwiperSlide>
+
               <SwiperSlide>
-                <MenuCard image={"https://lh3.googleusercontent.com/p/AF1QipPXvtbmNsbyPhe3UZuVUvHjOY7533M8sWojl5H5=s1360-w1360-h1020"} title={"TACOS"}/>
-              </SwiperSlide>
-              <SwiperSlide>
-              <MenuCard image="https://www.seriouseats.com/thmb/lOdEqFZsV3LOzX5Pc2Y6XCJuvTs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2020__10__20201002-mission-style-burrito-jillian-atkinson-2-6841455590ed4c3981529b232166643a.jpg" title="BURRITOS"/>
+              <MenuCard image={nachos} title="LOADED NACHOS"/>
               </SwiperSlide>
             </Swiper>
             

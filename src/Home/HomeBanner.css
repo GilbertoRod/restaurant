@@ -54,11 +54,17 @@ z-index: 2;
     font-size: 20px;
     color: black;
     background-color: white;
-    border: 1px solid black;
+    border: 1px inset white;
+    transition: all ease-in .15s;
+    
     padding: 10px;
-    border-radius: 10px;
-    box-shadow: 2px 3px var(--main);
+    border-radius: 20px;
+
+    box-shadow: 2px 4px var(--main);
     cursor: pointer;
+}
+.banner-btn:hover{
+    box-shadow: 0px 0px var(--main);
 }
 @media screen and (max-width:600px) {
     .home-banner-text-container p{

@@ -64,7 +64,9 @@
 /* MENU CARDS*/
 
 .menu-card{
-width: 90%;
+width: 100%;
+max-width: 420px;
+
   background-color: white;
   height: 100%;
   padding: 5px;
@@ -75,6 +77,7 @@ width: 90%;
 }
 .menu-card-img{
   width: 100%;
+  max-width: 420px;
   border-radius: 10px;
   height: 400px;
   object-fit: cover;

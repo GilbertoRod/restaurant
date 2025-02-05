@@ -7,25 +7,9 @@ import { faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
 
 function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 1100);
-  
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsLargeScreen(window.innerWidth > 1100);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   const toggleMenu = () => {
-    if (!isLargeScreen) {
       setIsOpen((prev) => !prev);
-    }
+
   };
 
   return (
@@ -36,22 +20,37 @@ function HamburgerMenu() {
           <img src={logo} className='company-logo' alt='Company Logo'/>
         </div>
       </Link>
-      {/* <a href='tel:+16822344610'>
+      <a href='tel:+16822344610'>
         <button className="nav-call-btn">
           <FontAwesomeIcon icon={faPhoneVolume}/> <span style={{marginLeft:"5px"}}>ORDER NOW</span>
         </button>
-      </a> */}
+      </a>
       </div>
       
-      <div
-        className={`menu-icon ${isOpen ? "open" : ""}`}
-        onClick={toggleMenu}
-      >
+      <div className={`menu-icon ${isOpen ? "open" : ""}`} onClick={toggleMenu}>
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>
       </div>
-      <ul className={`nav-links ${isOpen ? "active" : ""}`}>
+      <ul className={`nav-links`}>
+        <li>
+          <NavLink to="/">
+            HOME
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/menu">
+            MENU
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/about">
+            ABOUT
+          </NavLink>
+        </li>
+
+      </ul>
+      <ul className={`nav-links-s ${isOpen ? "active" : ""}`}>
         <li>
           <NavLink to="/" onClick={toggleMenu}>
             HOME
