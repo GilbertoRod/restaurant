@@ -19,8 +19,9 @@
     margin-top: 10px;
 }
 .review-name{
-    font-size: 35px;
+    font-size: 30px;
     margin-top: 0px;
+    font-weight:200;
     color: var(--main);
     letter-spacing: normal;
     font-family: Titan;
