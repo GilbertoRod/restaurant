@@ -9,9 +9,23 @@
   background-size: cover;
   background-position: center, center, 0 0;
   background-repeat: no-repeat, no-repeat, repeat;
+  overflow: hidden;
+
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+/* 
 .menu-hero {
   background-image: url('../assets/food/hero-menu-alt-2-hq.jpg');
   background-size: cover;
@@ -49,6 +63,213 @@
   text-shadow: 2px 3px 0px rgb(0, 0, 0);
   margin-top: 0px;
 }
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu-hero-2{
+  padding: 200px 20px;
+  font-family: Titan;
+
+  color: var(--main);
+  font-size: 30px;
+  background-color: rgba(6, 116, 32, 0.055);
+  border-radius: 20px;
+  padding-bottom: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+.menu-hero-content{
+  max-width: 1700px;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+
+}
+
+.menu-hero-left,.menu-hero-right{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+.menu-hero-comment-text{
+
+  color: var(--contrast);
+
+}
+.menu-hero-title{
+  text-align: start;
+
+}
+
+
+
+
+
+
+
+
+
+
+.menu-hero-button{
+display: flex;
+gap: 10px;
+width:fit-content;
+align-items: center;
+margin-top: 100px;
+font-family: titan;
+color: white;
+background-color: var(--main);
+font-size: 20px;
+border-radius: 50px;
+padding: 8px;
+border: none;
+box-shadow: -2px 4px var(--contrast);
+}
+.hero-menu-button-icon{
+  background-color: var(--contrast);
+  border-radius: 100px;
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+.menu-hero-2 span{
+  color: var(--contrast);
+}
+.menu-hero-2 div img{
+  width: 100%;
+  max-width: 700px;
+  align-self: flex-end;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+  box-shadow: 1px 10px 10px rgb(2, 32, 5),10px 10px rgb(2, 32, 5);
+}
+
+
+
+
+@media screen and (max-width:1100px) {
+  .menu-hero-2{
+    padding: 100px 10px;
+    background: url('../assets/food/hero-menu-alt-2.jpg');
+    height: 10;
+    background-size: cover;
+    background-position: center;
+    min-height: 75vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .menu-hero-2::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.274);
+    border-radius: 20px;
+    z-index: 1;
+
+  }
+  .menu-hero-comment-text{
+    text-shadow: 1px 2px rgb(223, 223, 223);
+
+
+  }
+  .menu-hero-title{
+    text-shadow: 1px 0px 2px rgb(255, 255, 255);
+    
+  }
+  .menu-hero-title span{
+    text-shadow: 1px 0px 2px rgb(255, 255, 255);
+
+  }
+  .menu-hero-content{
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+  }
+  .menu-hero-right{
+    order: 1;
+    width: 100%;
+    display: none;
+
+  }
+  .menu-hero-left{
+    order: 2;
+    width: initial;
+  }
+  .menu-hero-2 div img{
+    border-radius: 30px;
+    box-shadow: none;
+    object-fit: cover;
+    width: 100%;
+    max-width: initial;
+    height: 500px;
+  }
+  .menu-hero-button{
+    margin-top: 60px;
+    padding: 5px 10px;
+    font-size: .6em;
+  }
+}
+@media screen and (max-width:570px){
+  .menu-hero-2 div img{
+    /* width: 100%;
+    max-width: 700px; */
+    min-height: 450px;
+    height: initial;
+  }
+  .menu-hero-title{
+    font-size:1.9em;
+  
+  }
+  .menu-hero-comment-text{
+    font-size: .9em;
+
+  }
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -76,7 +297,7 @@
   text-align: center;
   padding: 20px;
   padding-bottom: 0px;
-  font-family: Leckerli;
+  font-family: titan;
   font-weight: bold;
   color: var(--main); /* Match the green tone from your main menu */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);

@@ -5,16 +5,44 @@ import loadednachos from '../assets/food/loaded-nachos-alt.jpg'
 import kidsnachos from '../assets/food/kids-nachos.jpg'
 import elote from '../assets/elote.jpg'
 import loadedfries from '../assets/food/papas-con-carne.jpg'
+import heroImg from '../assets/food/hero-menu-alt-2.jpg'
 import './Menu.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUtensils } from '@fortawesome/free-solid-svg-icons'
 function Menu() {
 
   return (
     <div className="menu-page">
       {/* Hero Section */}
-      <div className="menu-hero">
+      {/* <div className="menu-hero">
         <h1 data-aos="fade">Our Menu: Fresh & Flavorful</h1>
         <p data-aos="fade">Explore the authentic taste of Mexico!</p>
+      </div> */}
+
+      <div className='menu-hero-2'>
+        <div className='menu-hero-content'>
+          <div className='menu-hero-left'>
+            <p className='menu-hero-comment-text'>|BEST FOOD TRUCK IN ENNIS</p>
+            <h1 className='menu-hero-title'>
+                <span>Mexican</span> Street Food Menu | Tacos & More in <span>Venus</span>, <span>TX</span>
+            </h1>
+            <button className='menu-hero-button'>
+              <div className='hero-menu-button-icon'><FontAwesomeIcon icon={faUtensils}/></div>
+              <div>ORDER NOW</div>
+            </button>
+          </div>
+
+          <div className='menu-hero-right'>
+            <img src={heroImg}/>
+          </div>
+        </div>
       </div>
+
+
+
+
+
+
 
       {/* Menu Categories */}
       <div className="menu-body">
