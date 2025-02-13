@@ -190,7 +190,7 @@ transition: all ease-in .15s;
   }
   #menu-hero-bar{
     background: rgb(0, 0, 0);
-    box-shadow: 2px -1px white, 2px 1px white,-2px -1px white,-2px 1px white;
+    
 
 
   }
@@ -218,7 +218,7 @@ transition: all ease-in .15s;
     height: 500px;
   }
   .menu-hero-button{
-    margin-top: 60px;
+    margin-top: 0px;
     padding: 5px 10px;
     font-size: .6em;
   }
