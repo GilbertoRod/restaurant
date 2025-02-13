@@ -8,7 +8,7 @@ import loadedfries from '../assets/food/papas-con-carne.jpg'
 import heroImg from '../assets/food/hero-menu-alt-2.jpg'
 import './Menu.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUtensils } from '@fortawesome/free-solid-svg-icons'
+import { faClock, faPepperHot, faRefresh, faStar, faUtensils } from '@fortawesome/free-solid-svg-icons'
 function Menu() {
 
   return (
@@ -26,6 +26,10 @@ function Menu() {
             <h1 className='menu-hero-title'>
                 <span>Mexican</span> Street Food Menu | Tacos & More in <span>Venus</span>, <span>TX</span>
             </h1>
+
+              <div style={{width:"100%", height:"10px", background:"var(--contrast)", borderRadius:"20px", marginTop:"10px"}}/>
+            <p style={{fontFamily:"leckerli",fontWeight:"800",color:"var(--contrast)"}}>Order From Our Delicious Selection of Tacos, Quesadillas, Tortas, and More</p>
+
             <button className='menu-hero-button'>
               <div className='hero-menu-button-icon'><FontAwesomeIcon icon={faUtensils}/></div>
               <div>ORDER NOW</div>
@@ -39,8 +43,43 @@ function Menu() {
       </div>
 
 
+      {/*Hero transition*/}
+      <div className='menu-hero-transition'>
+        <div className='menu-hero-transition-wrapper'>
+          <div className='menu-hero-transition-content'>
+            <div className="menu-transition-icon-block">
+              <FontAwesomeIcon icon={faPepperHot} className="menu-transition-icon"/>
+            </div>
+            <div>
+              <h2>Fresh Ingredients</h2>
+              <p>We use fresh ingredients to create bold, authentic Mexican street food flavors you’ll love.</p>
+            </div>
 
+          </div>
 
+          <div className='menu-hero-transition-content'>
+            <div className="menu-transition-icon-block">
+              <FontAwesomeIcon icon={faClock} className="menu-transition-icon"/>
+            </div>
+            <div>
+              <h2>Quick Service</h2>
+              <p>Fast and friendly service with the authentic taste of Mexican street food in every bite.</p>
+            </div>
+
+          </div>
+
+          <div className='menu-hero-transition-content'>
+            <div className="menu-transition-icon-block">
+              <FontAwesomeIcon icon={faStar} className="menu-transition-icon"/>
+            </div>
+            <div>
+              <h2>Authentic Taste</h2>
+              <p>Traditional Mexican recipes crafted to perfection, delivering authentic flavor every single time.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
 
 
 
