@@ -8,7 +8,7 @@ import loadedfries from '../assets/food/papas-con-carne.jpg'
 import heroImg from '../assets/food/hero-menu-alt-2.jpg'
 import './Menu.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faClock, faPepperHot, faRefresh, faStar, faUtensils } from '@fortawesome/free-solid-svg-icons'
+import { faClock, faPepperHot, faStar, faUtensils } from '@fortawesome/free-solid-svg-icons'
 function Menu() {
 
   return (
@@ -22,18 +22,22 @@ function Menu() {
       <div className='menu-hero-2'>
         <div className='menu-hero-content'>
           <div className='menu-hero-left'>
-            <p className='menu-hero-comment-text'>|BEST FOOD TRUCK IN ENNIS</p>
-            <h1 className='menu-hero-title'>
+            <p className='menu-hero-comment-text' data-aos="fade-down-right">|BEST FOOD TRUCK IN ENNIS</p>
+            <h1 className='menu-hero-title' data-aos="fade-down-right">
                 <span>Mexican</span> Street Food Menu | Tacos & More in <span>Venus</span>, <span>TX</span>
             </h1>
 
-              <div style={{width:"100%", height:"10px", background:"var(--contrast)", borderRadius:"20px", marginTop:"10px"}}/>
-            <p style={{fontFamily:"leckerli",fontWeight:"800",color:"var(--contrast)"}}>Order From Our Delicious Selection of Tacos, Quesadillas, Tortas, and More</p>
-
-            <button className='menu-hero-button'>
+              <div id='menu-hero-bar' data-aos="fade-right"/>
+            <p style={{fontFamily:"leckerli",fontWeight:"800"}} data-aos="fade-up-left">Order From Our Delicious Selection of Tacos, Quesadillas, Tortas, and More</p>
+   
+            <button data-aos="slide-right" onClick={() => window.location.href = 'tel:682-234-4610'} className='menu-hero-button'>
               <div className='hero-menu-button-icon'><FontAwesomeIcon icon={faUtensils}/></div>
               <div>ORDER NOW</div>
             </button>
+ 
+
+
+
           </div>
 
           <div className='menu-hero-right'>
@@ -233,7 +237,7 @@ function Menu() {
       <div className="menu-cta">
         <div className='menu-cta-content'>
           <h2>Ready to Order?</h2>
-          <button className="cta-button" onClick={() => window.location.href = 'tel:682-234-4610'}>Call to Order</button>
+          <button className="nav-call-btn" onClick={() => window.location.href = 'tel:682-234-4610'}>Call to Order</button>
           <p>(682)234-4610</p>
         </div>
       </div>
