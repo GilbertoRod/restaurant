@@ -339,9 +339,33 @@ transition: all ease-in .15s;
 
 
 
-
-
-
+.menu-page-card{
+  background-color: white;
+  display: flex;
+  min-height: 150px;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 700px;
+}
+.menu-page-card-img{
+  width: 40%;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 4/3;
+}
+.menu-page-card-content{
+  margin: 0px 10px;
+}
+.menu-page-card-title{
+  font-family: leckerli;
+  text-align: start;
+  color: var(--main);
+}
+.menu-page-card-price{
+  margin: 0;
+  color: var(--comp);
+}
 
 
 
@@ -590,4 +614,37 @@ transition: all ease-in .15s;
   .menu-title,.kids-menu-title{
     font-size: 40px;
   }
+}
+
+
+
+
+
+.google-map-menu {
+  display: block;/*this eliminates the 1 px of blank space at the bottom*/
+  width: 100%;
+  background-position: top center;
+  background-size: cover;
+  height: 100%;
+  box-shadow: 2px 2px 10px #00000078;
+  border-radius: 5px;
+  box-sizing: border-box;
+
+  height: 500px;
+  padding: 0;
+
+}
+
+.map-holder-menu {
+  width: 100%;
+  background-position: top center;
+  background-size: cover;
+  padding: 0px;
+  border-radius: 5px;
+  margin: 0px 0px;
+
+  height: 100%;
+
+
+
 }

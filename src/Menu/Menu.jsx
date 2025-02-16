@@ -85,7 +85,19 @@ function Menu() {
         </div>
       </div>
 
+      
 
+
+
+        <div className='menu-page-card'>
+          <img className='menu-page-card-img' src={tacosMenu}/>
+          <div className='menu-page-card-content'>
+            <h1 className='menu-page-card-title'>Tacos</h1>
+            <p className='menu-page-card-price'>$2.50/ea.</p>
+            <p className='menu-page-card-subinfo'>Choices of Meat: <b>Pollo, Lengua, Asada, Pastor, Tripas, Barbacoa, and Campechanos (taco mix)</b></p>
+            <p className='menu-page-card-info'>Our tacos are served with your choice(s) of meat and topped with Fresh Cilantro and diced Onions. Comes with a side of Grilled Onions, Lime, a Roasted Jalapeno, and Salsa.</p>
+          </div>
+        </div>
 
       {/* Menu Categories */}
       <div className="menu-body">
@@ -307,6 +319,15 @@ function Menu() {
         </div>
 
       </div>
+      <div className='map-holder-menu'>
+
+            <iframe title='Your Creation Location On Map' className='google-map-menu' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3367.3168800796657!2d-97.10752752437693!3d32.43745190126194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e5f9ff1ef4cf1%3A0xa46268b97039ed9c!2sStreet%20Tacos%20Y%20Mas%2C%20Venus%20Texas*21!5e0!3m2!1sen!2sus!4v1734835992587!5m2!1sen!2sus" 
+            style={{border:'0'}}
+            allowFullScreen={true}
+            loading="lazy" 
+          referrerPolicy="no-referrer-when-downgrade"/>
+          </div>
+
     </div>
 
 
