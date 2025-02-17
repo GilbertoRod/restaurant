@@ -125,7 +125,7 @@ function Menu() {
           <MenuCard pic={elote} item={"ELOTE"} price={"4.00"} description={"Mexican Street Corn in a cup topped with Salsa, Sour Cream, Cheese, Mayonnaise, and Butter."}/>
 
 
-          <MenuCard pic={loadedfries} item={"CARNE ASADA FRIES"} price={"9.00"} description={"Crinkle cut frnech fries topped with carne asada, cheese, sour cream, and jalapenos."}/>
+          <MenuCard pic={loadedfries} item={"CARNE ASADA FRIES"} price={"12.50"} description={"Crinkle cut frnech fries topped with carne asada, cheese, sour cream, and jalapenos."}/>
 
 
 
@@ -174,8 +174,8 @@ function Menu() {
         <div className='menu-items'>
           <MenuCard  item={"PAPAS CON QUESO"} price={"6.00"} description={"Potato Fries served with melted cheese on top."}/>
           <MenuCard  item={"QUESADILLA CON PAPAS"} price={"6.00"} description={"Served in a tortilla with Cheese, Carne Asada, and a side of French Fries."}/>
-          <MenuCard  pic={kidsnachos} item={"NACHOS"} price={"6.00"} description={"Served with Nacho Cheese and an option of jalapeno peppers."}/>
-          <MenuCard  item={"CHURROS"} price={"6.00"} description={"Filled with either Vanilla or Cajeta."}/>
+          <MenuCard  pic={kidsnachos} item={"NACHOS"} price={"4.00"} description={"Served with Nacho Cheese and an option of jalapeno peppers."}/>
+          <MenuCard  item={"CHURROS"} price={"2.50"} description={"Filled with either Vanilla or Cajeta."}/>
         </div>
 
       </div>
