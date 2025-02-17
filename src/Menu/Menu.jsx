@@ -9,15 +9,25 @@ import heroImg from '../assets/food/hero-menu-alt-2.jpg'
 import './Menu.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock, faPepperHot, faStar, faUtensils } from '@fortawesome/free-solid-svg-icons'
+
+function MenuCard({pic,item, price, description}){
+  return(
+    <div className='menu-page-card'>
+    <img className='menu-page-card-img' src={pic?pic:"https://www.svgrepo.com/show/508699/landscape-placeholder.svg"}/>
+    <div className='menu-page-card-content'>
+      <h1 className='menu-page-card-title'>{item}</h1>
+      <p className='menu-page-card-price'>${price}/ea.</p>
+      {/* <p className='menu-page-card-subinfo'></p> */}
+      <p className='menu-page-card-info'>{description}</p>
+    </div>
+  </div>
+  )
+}
 function Menu() {
 
   return (
     <div className="menu-page">
-      {/* Hero Section */}
-      {/* <div className="menu-hero">
-        <h1 data-aos="fade">Our Menu: Fresh & Flavorful</h1>
-        <p data-aos="fade">Explore the authentic taste of Mexico!</p>
-      </div> */}
+
 
       <div className='menu-hero-2'>
         <div className='menu-hero-content'>
@@ -28,7 +38,7 @@ function Menu() {
             </h1>
 
               <div id='menu-hero-bar' data-aos="fade-right"/>
-            <p style={{fontFamily:"leckerli",fontWeight:"800"}} data-aos="fade-up-left">Order From Our Delicious Selection of Tacos, Quesadillas, Tortas, and More</p>
+            <p style={{fontFamily:"leckerli",fontWeight:"800"}} className='menu-hero-description' data-aos="fade-up-left">Order From Our Delicious Selection of Tacos, Quesadillas, Tortas, and More</p>
    
             <button data-aos="slide-right" onClick={() => window.location.href = 'tel:682-234-4610'} className='menu-hero-button'>
               <div className='hero-menu-button-icon'><FontAwesomeIcon icon={faUtensils}/></div>
@@ -89,151 +99,35 @@ function Menu() {
 
 
 
-        <div className='menu-page-card'>
-          <img className='menu-page-card-img' src={tacosMenu}/>
-          <div className='menu-page-card-content'>
-            <h1 className='menu-page-card-title'>Tacos</h1>
-            <p className='menu-page-card-price'>$2.50/ea.</p>
-            <p className='menu-page-card-subinfo'>Choices of Meat: <b>Pollo, Lengua, Asada, Pastor, Tripas, Barbacoa, and Campechanos (taco mix)</b></p>
-            <p className='menu-page-card-info'>Our tacos are served with your choice(s) of meat and topped with Fresh Cilantro and diced Onions. Comes with a side of Grilled Onions, Lime, a Roasted Jalapeno, and Salsa.</p>
-          </div>
-        </div>
+      
+
 
       {/* Menu Categories */}
       <div className="menu-body">
         <div className='menu-title'>
-
           <div className='our-menu'>🌮 OUR MENU 🌮</div>
-
         </div>
-
-
-
-
-
-
+        <p className='menu-meat-choices'><span style={{color:"var(--comp)"}}>*</span> Our Choices of Meat Include: <b>Pollo, Lengua, Asada, Pastor, Tripas, Barbacoa, and Campechanos (taco mix)</b></p>
         <div className='menu-items'>
-            <div className='menu-item' data-aos="fade-right">
-              <img className="menu-item-img" src={tacosMenu}/>
-              <h1 className='menu-item-title'>TACOS</h1>
-              <p className='menu-item-price'>$2.50/ea.</p>
-              <p className='menu-item-description'>
-                Choices of Meat: <b>Pollo, Lengua, Asada, Pastor, Tripas, Barbacoa, and Campechanos (taco mix)</b>
-                <br/>
-                <br/>
-
-                Served with your choice(s) of meat and topped with Fresh Cilantro and diced Onions. Comes with a side of Grilled Onions, Lime, a Roasted Jalapeno, and Salsa.
-              </p>
-            </div>
 
 
+          <MenuCard pic={tacosMenu} item={"TACOS"} price={"2.50"} description={"Served with your choice(s) of meat and topped with Fresh Cilantro and diced Onions. Comes with a side of Grilled Onions, Lime, a Roasted Jalapeno, and Salsa."}/>
+
+          <MenuCard pic={qmenu} item={"QUESADILLAS"} price={"9.00"} description={"Served in a tortilla  with Cheese, Lettuce, Jalapeno Peppers, Grilled Onions, and your choice of meat."}/>
+
+          <MenuCard item={"BURRITOS"} price={"9.00"} description={"Wrapped in a tortilla  with Beans, Cheese, Lettuce, Tomato, Grilled Onions, Jalapeno Peppers, and your choice of meat."}/>
+
+          <MenuCard item={"TORTA CUBANA"} price={"10.00"} description={"Torta Filled with Asada, Pastor, Sausage, Ham, Cheese, Lettuce, Tomato, Avocado, and Jalapeno Peppers"}/>
+
+          <MenuCard pic={loadednachos} item={"LOADED NACHOS"} price={"12.00"} description={"Nachos Served with your choice of Meat, Cheese, Beans, Sour Cream, and Pico de Gallo."}/>
 
 
+          <MenuCard pic={elote} item={"ELOTE"} price={"4.00"} description={"Mexican Street Corn in a cup topped with Salsa, Sour Cream, Cheese, Mayonnaise, and Butter."}/>
 
 
+          <MenuCard pic={loadedfries} item={"CARNE ASADA FRIES"} price={"9.00"} description={"Crinkle cut frnech fries topped with carne asada, cheese, sour cream, and jalapenos."}/>
 
 
-
-            <div className='menu-item' data-aos="fade-left">
-              <img className="menu-item-img" src={qmenu}/>
-              <h1 className='menu-item-title'>QUESADILLAS</h1>
-              <p className='menu-item-price'>$9.00/ea.</p>
-              <p className='menu-item-description'>
-                Choices of Meat: <b>Pollo, Lengua, Asada, Pastor, Tripas, Barbacoa, and Campechanos (taco mix)</b>
-                <br/>
-                <br/>
-                Served in a tortilla  with Cheese, Lettuce, Jalapeno Peppers, Grilled Onions, and your choice of meat.
-              </p>
-            </div>
-
-
-
-          <div className='menu-item' data-aos="fade-right">
-            <img className="menu-item-img" src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"/>
-            <h1 className='menu-item-title'>BURRITOS</h1>
-            <p className='menu-item-price'>$9.00/ea.</p>
-            
-            <p className='menu-item-description'>
-              
-            Choices of Meat: <b>Pollo, Lengua, Asada, Pastor, Tripas, Barbacoa, and Campechanos (taco mix)</b>
-            <br/>
-            <br/>
-              Wrapped in a tortilla  with Beans, Cheese, Lettuce, Tomato, Grilled Onions, Jalapeno Peppers, and your choice of meat
-            </p>
-          </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <div className='menu-item' data-aos="fade-left">
-            <img className="menu-item-img" src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"/>
-            <h1 className='menu-item-title'>TORTA CUBANA</h1>
-            <p className='menu-item-price'>$10.00/ea.</p>
-            
-            <p className='menu-item-description'>
-              Torta Filled with Asada, Pastor, Sausage, Ham, Cheese, Lettuce, Tomato, Avocado, and Jalapeno Peppers
-            </p>
-          </div>
-
-
-
-
-
-
-
-
-
-          <div className='menu-item' data-aos="fade-right">
-            <img className="menu-item-img" style={{objectPosition:" center"}} src={loadednachos}/>
-            <h1 className='menu-item-title'>LOADED NACHOS</h1>
-            <p className='menu-item-price'>$12.00/ea.</p>
-            
-            <p className='menu-item-description'>
-              
-            Choices of Meat: <b>Pollo, Lengua, Asada, Pastor, Tripas, Barbacoa, and Campechanos (taco mix)</b>
-            <br/>
-            <br/>
-              Nachos Served with your choice of Meat, Cheese, Beans, Sour Cream, and Pico de Gallo
-            </p>
-          </div>
-
-          <div className='menu-item' data-aos="fade-left">
-            <img className="menu-item-img" src={elote}/>
-            <h1 className='menu-item-title'>ELOTE</h1>
-            <p className='menu-item-price'>$4.00/ea.</p>
-            
-            <p className='menu-item-description'>
-              
-
-              Elote in a cup topped with Salsa, Sour Cream, Cheese, Mayonnaise, and Butter
-            </p>
-          </div>
-
-
-
-
-
-
-
-          <div className='menu-item' data-aos="fade-right">
-            <img className="menu-item-img" src={loadedfries}/>
-            <h1 className='menu-item-title'>CARNE ASADA FRIES</h1>
-            <p className='menu-item-price'>$9.00/ea.</p>
-            
-            <p className='menu-item-description'>
-              Crinkle cut frnech fries topped with carne asada, cheese, sour cream, and jalapenos
-            </p>
-          </div>
 
         </div>
       </div>
@@ -270,52 +164,18 @@ function Menu() {
 
 
 
-      <div className="kids-menu-body">
-        <div className='kids-menu-title'>
-
+      <div className="menu-body">
+        <div className='menu-title'>
           🍽️ KIDS MENU
-
         </div>
 
 
 
         <div className='menu-items'>
-
-            <div className='menu-item' data-aos="fade-right">
-              <img className="menu-item-img" src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"/>
-              <h1 className='menu-item-title'>PAPAS CON QUESO</h1>
-              <p className='menu-item-price'>$6.00/ea.</p>
-              <p className='menu-item-description'>
-                Potato Fries served with melted cheese on top
-              </p>
-            </div>
-
-            <div className='menu-item' data-aos="fade-left">
-              <img className="menu-item-img" src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"/>
-              <h1 className='menu-item-title'>QUESADILLA CON PAPAS</h1>
-              <p className='menu-item-price'>$6.00/ea.</p>
-              <p className='menu-item-description'>
-              Served in a tortilla with Cheese, Carne Asada, and a side of French Fries
-              </p>
-            </div>
-
-            <div className='menu-item' data-aos="fade-right">
-              <img className="menu-item-img" style={{objectPosition:"bottom"}} src={kidsnachos}/>
-              <h1 className='menu-item-title'>NACHOS</h1>
-              <p className='menu-item-price'>$6.00/ea.</p>
-              <p className='menu-item-description'>
-              Served with Nacho Cheese
-              </p>
-            </div>
-
-            <div className='menu-item' data-aos="fade-left">
-              <img className="menu-item-img" src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"/>
-              <h1 className='menu-item-title'>CHURROS</h1>
-              <p className='menu-item-price'>$6.00/ea.</p>
-              <p className='menu-item-description'>
-              Filled with either Vanilla or Cajeta
-              </p>
-            </div>
+          <MenuCard  item={"PAPAS CON QUESO"} price={"6.00"} description={"Potato Fries served with melted cheese on top."}/>
+          <MenuCard  item={"QUESADILLA CON PAPAS"} price={"6.00"} description={"Served in a tortilla with Cheese, Carne Asada, and a side of French Fries."}/>
+          <MenuCard  pic={kidsnachos} item={"NACHOS"} price={"6.00"} description={"Served with Nacho Cheese and an option of jalapeno peppers."}/>
+          <MenuCard  item={"CHURROS"} price={"6.00"} description={"Filled with either Vanilla or Cajeta."}/>
         </div>
 
       </div>

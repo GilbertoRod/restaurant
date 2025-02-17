@@ -1,3 +1,56 @@
+
+/*menu card*/
+.menu-page-card{
+  background-color: white;
+  display: flex;
+  min-height: 150px;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.322);
+}
+.menu-page-card-img{
+  width: 40%;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 4/3;
+}
+.menu-page-card-content{
+  padding: 20px 10px;
+}
+.menu-page-card-title{
+  font-family: leckerli;
+  text-align: start;
+  color: var(--main);
+  font-size: 28px;
+}
+.menu-page-card-price{
+  margin: 0;
+  color: var(--comp);
+}
+@media screen and (max-width:455px) {
+  .menu-page-card-title{
+
+    font-size: 24px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Hero */
 .menu-page {
   color: var(--contrast);
@@ -231,11 +284,18 @@ transition: all ease-in .15s;
     height: initial;
   }
   .menu-hero-title{
-    font-size:1.9em;
+    font-size:1.5em;
   
   }
   .menu-hero-comment-text{
+    font-size: .7em;
+
+  }
+  .menu-hero-description{
     font-size: .9em;
+  }
+  .menu-hero-button{
+    font-size: .5em;
 
   }
 
@@ -339,36 +399,6 @@ transition: all ease-in .15s;
 
 
 
-.menu-page-card{
-  background-color: white;
-  display: flex;
-  min-height: 150px;
-  border-radius: 20px;
-  overflow: hidden;
-  width: 100%;
-  max-width: 700px;
-}
-.menu-page-card-img{
-  width: 40%;
-  object-fit: cover;
-  object-position: center;
-  aspect-ratio: 4/3;
-}
-.menu-page-card-content{
-  margin: 0px 10px;
-}
-.menu-page-card-title{
-  font-family: leckerli;
-  text-align: start;
-  color: var(--main);
-}
-.menu-page-card-price{
-  margin: 0;
-  color: var(--comp);
-}
-
-
-
 
 
 
@@ -386,7 +416,7 @@ transition: all ease-in .15s;
   gap: 0px;
   margin-bottom: 0px;
   overflow: hidden;
-
+  max-width: 1700px;
   width: 100%;
 }
 .menu-title{
@@ -398,7 +428,7 @@ transition: all ease-in .15s;
   gap: 10px;
   text-align: center;
   padding: 20px;
-  padding-bottom: 0px;
+  padding-bottom: 40px;
   font-family: titan;
   font-weight: bold;
   color: var(--main); /* Match the green tone from your main menu */
@@ -428,69 +458,26 @@ transition: all ease-in .15s;
 
 .menu-items{
   display: grid;
-  grid-template-columns: repeat(2, minmax(0px,500px));
-  justify-content: center;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   width: 100%;
   gap: 40px;
-  padding: 40px 0px;
+  padding: 100px 10px;
+  padding-top: 30px;
   transition: transform 0.5s ease-in-out; 
+
 }
 
-@media screen and (max-width:1100px) {
+@media screen and (max-width:650px) {
   
   .menu-items{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr;
   }
-  /* .menu-item:last-child::after{
-    content: none;
-    background-color: none;
-  } */
 
 }
 
 
 
-
-.menu-item{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 0px 10px;
-  max-width: 500px;
-  background-color: #edefed;
-  padding: 30px;
-  border-radius: 40px;
-  
-}
-
-.menu-item::after{
-  content: "";
-  height: 3px;
-  width: 100%;
-  border-radius: 20px;
-  background-color: var(--main);
-}
-
-.menu-item-img{
-  height: 350px;
-  max-width: 350px;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.47);
-  margin-bottom: 30px;
-}
-
-.menu-item:nth-child(even) .menu-item-img {
-  border-radius: 10% 60% 10% 70% / 5% 10% 4% 8%;
-}
-
-.menu-item:nth-child(odd) .menu-item-img {
-  border-radius: 70% 10% 60% 10% / 8% 4% 10% 5%;
-
-}
 
 .menu-item-title{
   font-family: Titan;
@@ -498,17 +485,10 @@ transition: all ease-in .15s;
   text-shadow: 2px 3px 1px black;
 
 }
-.menu-item-price{
-  margin: 0;
-  color: var(--comp);
-  font-weight: bold;
-}
-.menu-item-description{
-  color: var(--contrast); /* Neutral gray for text readability */
-  flex-grow: 1;
+.menu-meat-choices{
+  font-size: 20px;
   padding: 10px;
-  border-radius: 10px;
-  font-size: 18px;
+  text-align: center;
 }
 
 
@@ -588,13 +568,7 @@ transition: all ease-in .15s;
 
 
 .kids-menu-body{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0px;
-  margin-bottom: 0px;
-  overflow: hidden;
-  padding: 110px 0px;
+
   width: 100%;
 }
 .kids-menu-title {

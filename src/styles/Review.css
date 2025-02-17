@@ -50,7 +50,7 @@
     }
 }
 .review-text::-webkit-scrollbar{
-
+    display: none;
 }
 
 .review-google-logo-container{
