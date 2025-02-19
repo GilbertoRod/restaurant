@@ -245,8 +245,11 @@
     right: 0;
     bottom: 0;
     content: "";
+    background-color: var(--main);
     background-position: center;
     background-size: cover;
+    border-radius: 50px;
+
 }
 .feature{
     display: flex;

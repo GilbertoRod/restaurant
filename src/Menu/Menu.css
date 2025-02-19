@@ -88,10 +88,12 @@
 
   border-radius: 20px;
   padding-bottom: 100px;
+  
   width: 100%;
   display: flex;
   justify-content: center;
 
+  /* background: rgba(0, 0, 0, 0.089); */
 
 }
 
@@ -330,6 +332,7 @@ transition: all ease-in .15s;
 /* menu hero transition*/
 .menu-hero-transition{
   padding: 20px;
+  padding-top: 0px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -418,6 +421,7 @@ transition: all ease-in .15s;
   overflow: hidden;
   max-width: 1700px;
   width: 100%;
+
 }
 .menu-title{
 

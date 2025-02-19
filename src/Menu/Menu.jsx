@@ -12,7 +12,7 @@ import { faClock, faPepperHot, faStar, faUtensils } from '@fortawesome/free-soli
 
 function MenuCard({pic,item, price, description}){
   return(
-    <div className='menu-page-card'>
+    <div className='menu-page-card' data-aos="fade">
     <img className='menu-page-card-img' src={pic?pic:"https://www.svgrepo.com/show/508699/landscape-placeholder.svg"}/>
     <div className='menu-page-card-content'>
       <h1 className='menu-page-card-title'>{item}</h1>
@@ -33,14 +33,14 @@ function Menu() {
         <div className='menu-hero-content'>
           <div className='menu-hero-left'>
             <p className='menu-hero-comment-text' data-aos="fade-down-right">|BEST FOOD TRUCK IN ENNIS</p>
-            <h1 className='menu-hero-title' data-aos="fade-down-right">
+            <h1 className='menu-hero-title' data-aos="fade-down-right" data-aos-offset="0">
                 <span>Mexican</span> Street Food Menu | Tacos & More in <span>Venus</span>, <span>TX</span>
             </h1>
 
-              <div id='menu-hero-bar' data-aos="fade-right"/>
-            <p style={{fontFamily:"leckerli",fontWeight:"800"}} className='menu-hero-description' data-aos="fade-up-left">Order From Our Delicious Selection of Tacos, Quesadillas, Tortas, and More</p>
+              <div id='menu-hero-bar' data-aos="fade-right" data-aos-offset="0"/>
+            <p style={{fontFamily:"leckerli",fontWeight:"800"}} className='menu-hero-description' data-aos="fade-up-left" data-aos-offset="0">Order From Our Delicious Selection of Tacos, Quesadillas, Tortas, and More</p>
    
-            <button data-aos="slide-right" onClick={() => window.location.href = 'tel:682-234-4610'} className='menu-hero-button'>
+            <button data-aos="slide-right" data-aos-offset="0" onClick={() => window.location.href = 'tel:682-234-4610'} className='menu-hero-button'>
               <div className='hero-menu-button-icon'><FontAwesomeIcon icon={faUtensils}/></div>
               <div>ORDER NOW</div>
             </button>
@@ -125,7 +125,7 @@ function Menu() {
           <MenuCard pic={elote} item={"ELOTE"} price={"4.00"} description={"Mexican Street Corn in a cup topped with Salsa, Sour Cream, Cheese, Mayonnaise, and Butter."}/>
 
 
-          <MenuCard pic={loadedfries} item={"CARNE ASADA FRIES"} price={"12.50"} description={"Crinkle cut frnech fries topped with carne asada, cheese, sour cream, and jalapenos."}/>
+          <MenuCard pic={loadedfries} item={"CARNE ASADA FRIES"} price={"12.50"} description={"Crinkle cut fries topped with carne asada, cheese, sour cream, and jalapenos."}/>
 
 
 
