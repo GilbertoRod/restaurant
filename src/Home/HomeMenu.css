@@ -64,16 +64,25 @@
 /* MENU CARDS*/
 
 .menu-card{
-width: 100%;
-max-width: 420px;
-
-  background-color: white;
+  width: 100%;
+  max-width: 420px;
   height: 100%;
   padding: 5px;
   border-radius: 10px;
   font-weight: 700;
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.616);
   margin: 20px 0px;
+  position: relative;
+}
+.menu-card-filter{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgba(17, 10, 10, 0.281);
+  z-index: -1;
 }
 .menu-card-img{
   width: 100%;
@@ -84,6 +93,7 @@ max-width: 420px;
   object-position: center;
   /* box-shadow: 0px 0px 5px rgb(0, 0, 0); */
 
+
 }
 .menu-card-title{
   text-align: center;
@@ -91,6 +101,9 @@ max-width: 420px;
   font-family: Leckerli;
   text-decoration: underline;
   text-decoration-color:var(--main) ;
+  color: rgb(255, 255, 255);
+
+
 }
 
 
@@ -99,12 +112,18 @@ max-width: 420px;
 /*SWIPER*/
 .home-menu-items .swiper-button-next,
 .home-menu-items .swiper-button-prev{
-  background-color: rgb(245, 245, 245);
+  background-color: rgba(228, 228, 228, 0.781);
   color: var(--main);
   padding: 10px;
   height: 40px;
   width: 40px;
   border-radius: 100px;
+  transition: all ease-in .15s;
+}
+.home-menu-items .swiper-button-next:hover,
+.home-menu-items .swiper-button-prev:hover{
+  background-color: rgb(245, 245, 245);
+
 }
 .home-menu-items .swiper-button-next:after, .home-menu-items .swiper-button-prev:after{
   font-size: 20px;

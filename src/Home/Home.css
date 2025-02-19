@@ -190,94 +190,64 @@
 
 
 
-/*Location & Business hours*/
-.feature-section-container{
 
-    flex-direction: column;
-    position: relative;
+
+
+.feat-container{
+    max-width: 1700px;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    overflow: hidden;
-    padding: 10px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.features-wrapper {
-    width: 100%;
-    background-position: top center;
-    background-size: cover;
-    padding: 80px 10px;
-    border-radius: 50px;
-    margin: 50px 0px;
-    max-width: 800px;
-    background-color: var(--main);
-    color: white;
-    font-size: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-    position: relative;
-    border: 2px solid rgba(8, 8, 8, 0.496);
-    box-shadow: 2px 2px 5px black;
-}
-
-.features-wrapper::after{
-    position: absolute;
-    background: url('../assets/overlays/pattern.svg');
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: "";
-    background-color: var(--main);
-    background-position: center;
-    background-size: cover;
-    border-radius: 50px;
-
-}
-.feature{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--main);
-    box-shadow: 0px 0px 10px var(--main);
+    justify-content: space-between;
     gap: 10px;
-    z-index: 5;
+    font-size: 30px;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-top: 80px;
+    padding-bottom:145px;
+
 }
-.feature p{
-    margin: 0;
-    text-align: center;
+
+
+.home-feature-title{
+    font-size: 60px;
+    font-family: titan;
 }
-
-
-
-
-
-.feature-icon{
+#feature-icon{
     background-color: rgb(255, 255, 255);
     display: inline-block;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     border-radius: 100px;
     color: var(--main);
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 45px;
+
 }
 
+.feat-container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    font-family: titan;
+}
+@media screen and (max-width:759px) {
+
+
+    .feat-container{
+    gap: 20px;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom:105px;
+
+    }
+    /* #feature-icon{
+        font-size: 35px;
+        width: 60px;
+        height: 60px;
+    } */
+    
+}

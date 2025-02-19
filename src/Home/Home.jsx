@@ -43,35 +43,39 @@ function Home() {
 
         <About/>
         <HomeMenu click={handleMenuClick}/>
+
+        <div data-aos="fade" className='feat-container'>
+          
+          <div>
+            <div id='feature-icon'>
+              <FontAwesomeIcon icon={faBox}/>
+            </div>
+            <p>Takeout</p>
+          </div>
+
+          <div>
+            <div id='feature-icon'>
+                <FontAwesomeIcon icon={faMobile}/>
+            </div>
+            <p>CALL-IN ORDERS</p>
+          </div>
+
+          <div>
+          <div id='feature-icon'>
+                <FontAwesomeIcon icon={faParking}/>
+              </div>
+            <p>ACCESSIBLE PARKING</p>
+          </div>
+
+        </div>
+
         <Reviews/>
         <HomeBanner/>
         
         <div className='feature-section-container'>
 
-        <p className='home-reviews-title' style={{color:"black"}} data-aos="zoom-in-left">OUR FEATURES</p>
-          <div className='features-wrapper' data-aos="slide-left">
-            <div className='feature'>
-              <div className='feature-icon'>
-                <FontAwesomeIcon icon={faBox}/>
-              </div>
-              <p>TAKEOUT</p>
-            </div>
-
-            <div className='feature'>
-              <div className='feature-icon'>
-                <FontAwesomeIcon icon={faMobile}/>
-              </div>
-              <p>CALL-IN ORDERS</p>
-            </div>
-
-            <div className='feature'>
-              <div className='feature-icon'>
-                <FontAwesomeIcon icon={faParking}/>
-              </div>
-              <p>ACCESSIBLE PARKING</p>
-            </div>
-            
-          </div>
+   
+          
         </div>
 
 
