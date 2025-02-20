@@ -13,6 +13,7 @@ import HomeMenu from './HomeMenu'
 import Reviews from './Reviews'
 import { Link, useNavigate } from 'react-router-dom'
 import HomeBanner from './HomeBanner'
+import Gallery from './Gallery'
 
 
 function Home() {
@@ -50,7 +51,7 @@ function Home() {
             <div id='feature-icon'>
               <FontAwesomeIcon icon={faBox}/>
             </div>
-            <p>Takeout</p>
+            <p>TAKEOUT</p>
           </div>
 
           <div>
@@ -72,11 +73,7 @@ function Home() {
         <Reviews/>
         <HomeBanner/>
         
-        <div className='feature-section-container'>
-
-   
-          
-        </div>
+        <Gallery/>
 
 
 
