@@ -10,7 +10,6 @@ import pic7 from '../assets/customer-pics/customer-7.jpg'
 import pic8 from '../assets/customer-pics/customer-8.jpg'
 import pic9 from '../assets/customer-pics/customer-9.jpg'
 import pic10 from '../assets/customer-pics/customer-10.jpg'
-import pic11 from '../assets/customer-pics/customer-11.jpg'
 function Gallery() {
   return (
     <div className='home-gallery'>
@@ -46,7 +45,7 @@ function Gallery() {
 
               </div>
               <div class="div10" data-aos="zoom-in">
-              <img loading="lazy" className='grid-img' style={{objectPosition:"center "}} src={pic11}/>
+              <img loading="lazy" className='grid-img' style={{objectPosition:"center "}} src={pic10}/>
 
               </div>
 
