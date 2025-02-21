@@ -54,7 +54,7 @@ function Reviews() {
               <Review name={"Chris L"} review={"Very delicious… tacos were juicy and flavored very well! Elote was in point! Highly recommend if you are in the Venus area. Pricing was very good!"}/>
           </SwiperSlide>
           <SwiperSlide>
-              <Review name={"Iris H"} review={"Always saw this taco truck at the corner of 157 and 67 in Venus. It moved right down the road on 157 past some storage units. Tacos are loaded. Grilled onions and yummy. Green Salsa was perfect for the tacos. Limes were a little dry and meat was a little on the charred side but still hit the spot. Jarritos out of an ice chest to finish up the meal. 5 tacos...1 jarritos...$16."}/>
+              <Review name={"Iris H"} review={"Always saw this taco truck at the corner of 157 and 67 in Venus. It moved right down the road on 157 past some storage units. Tacos are loaded. Grilled onions and yummy. Green Salsa was perfect for the tacos. Jarritos out of an ice chest to finish up the meal. 5 tacos...1 jarritos...$16."}/>
           </SwiperSlide>
           <SwiperSlide>
               <Review name={"Samantha Z"} review={"My family loves this place! We order frequently and can never get enough. Definitely reminds us of home. The family that runs the truck is generous, friendly, and kind. The food is great as well. Highly recommend!"}/>
