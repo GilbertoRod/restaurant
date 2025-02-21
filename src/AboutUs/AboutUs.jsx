@@ -13,13 +13,13 @@ function AboutUs() {
           <div className='about-us-text'  data-aos="slide-left">
             <p className='about-us-title'>OUR STORY</p>
 
-            <p>We are a family-owned food truck serving the Venus, TX community with authentic Mexican flavors made from cherished recipes passed down through generations. Our journey began with a shared love for food and a desire to bring the vibrant tastes of Mexico to our neighbors. At Street Tacos Y Mas, every dish is crafted with love, tradition, and the freshest ingredients.</p>
+            <p>At Street Tacos Y Mas, we’re a family-owned food truck proudly serving the Venus, TX and Johnson County community with authentic Mexican flavors. Our recipes, reflect a deep love for traditional Mexican cuisine. Every dish is crafted with fresh ingredients, rich flavors, and a touch of home.</p>
 
             <h2>The Meaning Behind Street Tacos Y Mas</h2>
             
             <div className='page-divider'/>
 
-            <p>We chose the name "Street Tacos Y Mas" to highlight our focus on authentic street-style Mexican cuisine, while "Y Mas" represents the variety and creativity we bring to our menu. It’s more than just food—it’s about sharing a piece of our culture with every meal.</p>
+            <p>Our name, "Street Tacos Y Mas," reflects our commitment to authentic Mexican street food while "Y Mas"—meaning "and more"—showcases the variety and creativity on our menu. Each meal is a celebration of our culture, made to share with our community.</p>
 
             <h2>Why Choose Street Tacos Y Mas?</h2>
 
@@ -28,11 +28,16 @@ function AboutUs() {
             <p><b>Authentic Flavors:</b> Each dish is made with fresh, high-quality ingredients and traditional recipes for an unforgettable taste.</p>
 
             <p><b>Welcoming Atmosphere:</b> We’re more than a food truck; we’re a place where the community comes together to share delicious food and good times.
-            Variety for Everyone: From tacos and tortas to burritos and quesadillas, we offer something for every craving.</p>
+            </p>
 
-            <p><b>Passion for the Community:</b> We love connecting with our customers and take pride in being a part of your special moments.</p>
+            <p>
+              <b>Delicious Variety: </b>
+              From tacos and tortas to burritos and quesadillas, we offer something for every craving.
+            </p>
 
-            <p>Thank you for choosing Street Tacos Y Mas. We can’t wait to serve you a taste of Mexico with every bite!</p>
+            <p><b>Passion for the Community:</b> We love connecting with our customers and take pride in being part of your special moments. As a family-owned business, we treat every guest like family and are honored to share our passion for authentic Mexican flavors with you.</p>
+
+            <p>Thank you for supporting Street Tacos Y Mas. We’re excited to share the bold, authentic flavors of Mexico with you—one delicious bite at a time!</p>
 
 
           </div>

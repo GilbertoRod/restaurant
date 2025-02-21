@@ -32,7 +32,7 @@ function Home() {
                 <h1 className='home-hero-title' data-aos="slide-right">MADE FRESH, SERVED FAST</h1>
                 <h1 className='home-hero-subtitle' data-aos="slide-left">MEXICAN STREET FOOD</h1>
               
-                <button className='home-hero-button' data-aos="fade-up" onClick={handleMenuClick}>VIEW MENU</button>
+                <button className='home-hero-button' data-aos-offset="0" data-aos="fade-up" onClick={handleMenuClick}>VIEW MENU</button>
            
               </div>
             </div>

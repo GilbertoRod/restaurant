@@ -32,7 +32,7 @@ function Menu() {
       <div className='menu-hero-2'>
         <div className='menu-hero-content'>
           <div className='menu-hero-left'>
-            <p className='menu-hero-comment-text' data-aos="fade-down-right">|BEST FOOD TRUCK IN ENNIS</p>
+            <p className='menu-hero-comment-text' data-aos="fade-down-right">|BEST FOOD TRUCK IN VENUS, TX</p>
             <h1 className='menu-hero-title' data-aos="fade-down-right" data-aos-offset="0">
                 <span>Mexican</span> Street Food Menu | Tacos & More in <span>Venus</span>, <span>TX</span>
             </h1>
@@ -66,7 +66,7 @@ function Menu() {
             </div>
             <div>
               <h2>Fresh Ingredients</h2>
-              <p>We use fresh ingredients to create bold, authentic Mexican street food flavors you’ll love.</p>
+              <p>We craft bold, authentic Mexican street food using only the freshest ingredients.</p>
             </div>
 
           </div>
@@ -77,7 +77,7 @@ function Menu() {
             </div>
             <div>
               <h2>Quick Service</h2>
-              <p>Fast and friendly service with the authentic taste of Mexican street food in every bite.</p>
+              <p>Enjoy fast, friendly service with every bite of our flavorful Mexican street food.</p>
             </div>
 
           </div>
@@ -88,7 +88,7 @@ function Menu() {
             </div>
             <div>
               <h2>Authentic Taste</h2>
-              <p>Traditional Mexican recipes crafted to perfection, delivering authentic flavor every single time.</p>
+              <p>Our perfected traditional recipes bring you the true taste of authentic Mexican flavors.</p>
             </div>
 
           </div>
