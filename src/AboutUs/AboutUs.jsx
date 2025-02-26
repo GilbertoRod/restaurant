@@ -50,7 +50,7 @@ function AboutUs() {
           <h1 className='about-us-title' >FAQs</h1>
           <div className='faq-accordions'>
             <FAQaccordion title="Are you open every day?" content="Yes We're open everyday! See our Hours down below for more details!"/>
-            <FAQaccordion title="What payment methods do you accept?" content="We accept cash, credit cards, and most major digital payment methods."/>
+            <FAQaccordion title="What payment methods do you accept?" content="We are currently ONLY accepting CASH and ZELLE as our payment methods"/>
             <FAQaccordion title="Can I call ahead to place an order?" content="Absolutely! Call us to place your order ahead of time, and we’ll have it ready for pickup."/>
             <FAQaccordion title=" Do you have outdoor seating available?" content="Yes! We have plenty of seating under a covered roof, providing a comfortable space to enjoy your meal no matter the weather."/>
           </div>
